@@ -13,7 +13,7 @@ function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
   const [filteredBundles, setFilteredBundles] = useState(data)
 
   useEffect(() => {
-    setFilteredBundles(data.sort(() => Math.random() - 0.5))
+    setFilteredBundles(data.sort((a, b) => a.displayName.localeCompare(b.displayName)))
   }, [data])
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {

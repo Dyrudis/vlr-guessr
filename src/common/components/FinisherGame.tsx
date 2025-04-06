@@ -1,15 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
 
 import Attemps from '@components/Attempts'
 import AudioPlayer from '@components/AudioPlayer'
 import Browser from '@components/Browser'
 import Modal from '@components/Modal'
-import bundlesQuery from '@queries/bundles'
+import bundles from '@data/bundles.json'
 
 function FinisherGame() {
-  const { data: bundles } = useQuery(bundlesQuery)
-
   const [randomPick, setRandomPick] = useState<bundleData | null | undefined>(null)
   const [attempsRemaining, setAttempsRemaining] = useState(3)
   const [attemps, setAttemps] = useState<string[]>([])
@@ -57,7 +54,7 @@ function FinisherGame() {
       <p className="mb-16 max-w-2xl px-4">You have 3 attemps to try to find the correct bundle, will you succeed?</p>
       {randomPick?.displayName && (
         <>
-          <AudioPlayer url={`src/common/data/finishers/${randomPick.displayName} Kill 5.mp3`} />
+          <AudioPlayer url={`finishers/${randomPick.displayName} Kill 5.mp3`} />
           <Attemps attemps={attemps} correctAnswer={randomPick.displayName} />
         </>
       )}

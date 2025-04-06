@@ -9,7 +9,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@components': resolve(__dirname, 'src/common/components'),
-      '@queries': resolve(__dirname, 'src/common/queries'),
       '@types': resolve(__dirname, 'src/common/types'),
       '@data': resolve(__dirname, 'src/common/data'),
       '@assets': resolve(__dirname, 'src/assets'),

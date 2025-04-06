@@ -59,7 +59,7 @@ export default defineConfig([
             // Aliased imports from external libraries
             ['^@'],
             // Aliased imports from project
-            ['^@components', '^@types', '^@queries', '^@data', '^@assets'],
+            ['^@components', '^@types', '^@data', '^@assets'],
             // Parent imports
             ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
             // Sibling imports

@@ -20,6 +20,7 @@ function App() {
               <Route path="/" element={<Menu />} />
               <Route path="/finisher" element={<FinisherGame />} />
               <Route path="/kill" element={<KillGame />} />
+              <Route path="*" element={404} />
             </Routes>
           </div>
           <Footer />
