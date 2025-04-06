@@ -7,7 +7,7 @@ type CardProps = {
 function Card(props: CardProps) {
   return (
     <div
-      className="bg-background rounded-lg p-4 max-w-3xs w-full hover:bg-background-alt cursor-pointer"
+      className="bg-background rounded-lg p-1 max-w-3xs w-full hover:bg-background-alt cursor-pointer"
       onClick={props.onClick}
     >
       {props.title && <h3>{props.title}</h3>}

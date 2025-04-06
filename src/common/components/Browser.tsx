@@ -24,7 +24,7 @@ function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
   return (
     <div className="flex flex-col items-center justify-center gap-6">
       <Search onSearch={handleSearch} attempsRemaining={attempsRemaining} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-1 w-full max-w-6xl">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2 w-full max-w-6xl">
         {filteredBundles?.map((bundle) => (
           <div className="mx-auto" onClick={() => onResponse(bundle)} key={bundle.id}>
             <BundleCard bundle={bundle} />
