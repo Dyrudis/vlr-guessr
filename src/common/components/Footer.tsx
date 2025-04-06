@@ -15,7 +15,7 @@ function Footer() {
         className="ml-auto flex items-center hover:bg-primary hover:text-background px-2 py-1 rounded-md cursor-pointer"
       >
         <GitBranch size={24} />
-        <span className="ml-2">v0.2.0</span>
+        <span className="ml-2">v1.0.0</span>
       </a>
     </footer>
   )

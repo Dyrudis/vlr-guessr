@@ -1,17 +1,18 @@
 type CardProps = {
-  title?: string
-  content: React.ReactNode
+  data: data
   onClick?: () => void
 }
 
-function Card(props: CardProps) {
+function Card({ data, onClick }: CardProps) {
   return (
     <div
       className="bg-background rounded-lg p-1 max-w-3xs w-full hover:bg-background-alt cursor-pointer"
-      onClick={props.onClick}
+      onClick={onClick}
     >
-      {props.title && <h3>{props.title}</h3>}
-      <div>{props.content}</div>
+      <div>
+        <img src={data.image} alt={data.name} className="w-full h-auto aspect-[16/9] rounded-lg" />
+        <p className="text-center">{data.name}</p>
+      </div>
     </div>
   )
 }

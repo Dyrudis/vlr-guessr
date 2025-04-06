@@ -2,7 +2,7 @@
 
 ![vlr-guessr Icon](src/assets/icon.svg)
 
-**vlr-guessr** is a fun and interactive web application where players can test their knowledge of Valorant skin bundles. The game challenges users to identify skin bundles based on finisher sounds or kill sounds.
+**vlr-guessr** is a fun and interactive web application where players can test their knowledge of Valorant SFX. The game challenges users to identify skin bundles or maps based on ace sounds or themes.
 
 ## Screenshots
 
@@ -49,9 +49,9 @@ http://localhost:5173
 ## Usage
 
 1. Choose a game mode from the main menu.
-2. Listen to the sound (finisher or kill) and try to identify the correct skin bundle.
-3. Use the search bar to filter bundles by name.
-4. Click on a bundle to make your guess.
+2. Listen to the sound (ace or theme) and try to identify the correct skin bundle or map.
+3. Use the search bar to filter by name.
+4. Click on any card to make your guess.
 5. Win or lose, try again and improve your score!
 
 ## Development

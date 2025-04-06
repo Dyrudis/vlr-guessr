@@ -1,5 +1,1 @@
-type bundle = {
-  id: string
-  name: string
-  image: string
-}
+type bundle = data

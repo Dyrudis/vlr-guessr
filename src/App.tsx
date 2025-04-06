@@ -1,10 +1,10 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
-import FinisherGame from '@components/FinisherGame'
+import AceGame from '@components/AceGame'
 import Footer from '@components/Footer'
 import Header from '@components/Header'
-import KillGame from '@components/KillGame'
+import MapGame from '@components/MapGame'
 import Menu from '@components/Menu'
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
           <div className="flex-grow flex flex-col items-center justify-center">
             <Routes>
               <Route path="/" element={<Menu />} />
-              <Route path="/finisher" element={<FinisherGame />} />
-              <Route path="/kill" element={<KillGame />} />
+              <Route path="/ace" element={<AceGame />} />
+              <Route path="/map" element={<MapGame />} />
               <Route path="*" element={404} />
             </Routes>
           </div>

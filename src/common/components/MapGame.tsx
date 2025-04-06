@@ -4,13 +4,13 @@ import Attemps from '@components/Attempts'
 import AudioPlayer from '@components/AudioPlayer'
 import Browser from '@components/Browser'
 import Modal, { ModalState } from '@components/Modal'
-import bundles from '@data/bundles.json'
+import maps from '@data/maps.json'
 
 const numberOfAttemps = 3
 
-function FinisherGame() {
-  const [answer, setAnswer] = useState<bundle | undefined>()
-  const [attemps, setAttemps] = useState<bundle[]>([])
+function MapGame() {
+  const [answer, setAnswer] = useState<map | undefined>()
+  const [attemps, setAttemps] = useState<map[]>([])
   const [hasWon, setHasWon] = useState<boolean | undefined>()
   const [modalState, setModalState] = useState<ModalState>({
     isOpen: false,
@@ -21,10 +21,10 @@ function FinisherGame() {
   const getAttempsRemaining = useCallback(() => numberOfAttemps - attemps.length, [attemps])
 
   useEffect(() => {
-    setAnswer(bundles[Math.floor(Math.random() * bundles.length)])
+    setAnswer(maps[Math.floor(Math.random() * maps.length)])
   }, [])
 
-  const handleResponse = (response: bundle) => {
+  const handleResponse = (response: map) => {
     if (hasWon !== undefined) return
 
     setAttemps((prev) => [...prev, response])
@@ -55,22 +55,22 @@ function FinisherGame() {
 
   const handleCloseModal = () => {
     setModalState((prev) => ({ ...prev, isOpen: false }))
-    setAnswer(bundles[Math.floor(Math.random() * bundles.length)])
+    setAnswer((prev) => maps.filter((map) => map.id !== prev?.id)[Math.floor(Math.random() * (maps.length - 1))])
     setAttemps([])
     setHasWon(undefined)
   }
 
   return (
     <>
-      <h1 className="text-center mb-2 max-w-2xl px-4">Find the skin bundle based on the finisher sound</h1>
-      <p className="mb-16 max-w-2xl px-4">You have 3 attemps to try to find the correct bundle, will you succeed?</p>
+      <h1 className="text-center mb-2 max-w-2xl px-4">Find the map based on its theme</h1>
+      <p className="mb-16 max-w-2xl px-4">You have 3 attemps to try to find the correct map, will you succeed?</p>
       {answer?.name && (
         <>
-          <AudioPlayer url={`finishers/${answer.id}.mp3`} />
+          <AudioPlayer url={`maps/${answer.id}.mp3`} />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
-      {bundles && <Browser data={bundles} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
+      {maps && <Browser data={maps} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
       <Modal {...modalState} onClose={handleCloseModal}>
         {hasWon ? <WinModal answer={answer!} attemps={attemps} /> : <LoseModal answer={answer!} attemps={attemps} />}
       </Modal>
@@ -78,20 +78,20 @@ function FinisherGame() {
   )
 }
 
-export default FinisherGame
+export default MapGame
 
-const WinModal = ({ answer, attemps }: { answer: bundle; attemps: bundle[] }) => {
+const WinModal = ({ answer, attemps }: { answer: map; attemps: map[] }) => {
   return (
     <div className="flex flex-col items-center relative">
-      <p className="text-center mb-2">Congratulations! You found the correct bundle!</p>
+      <p className="text-center mb-2">Congratulations! You found the correct map!</p>
       <Attemps attemps={attemps} answer={answer} />
       <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
-      <AudioPlayer url={`finishers/${answer.id}.mp3`} />
+      <AudioPlayer url={`maps/${answer.id}.mp3`} />
     </div>
   )
 }
 
-const LoseModal = ({ answer, attemps }: { answer: bundle; attemps: bundle[] }) => {
+const LoseModal = ({ answer, attemps }: { answer: map; attemps: map[] }) => {
   return (
     <div className="flex flex-col items-center relative">
       <p className="text-center mb-2">You have used all your attempts!</p>
@@ -100,7 +100,7 @@ const LoseModal = ({ answer, attemps }: { answer: bundle; attemps: bundle[] }) =
         The correct answer was: <span className="font-extrabold">{answer.name}</span>
       </p>
       <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
-      <AudioPlayer url={`finishers/${answer.id}.mp3`} />
+      <AudioPlayer url={`maps/${answer.id}.mp3`} />
     </div>
   )
 }
