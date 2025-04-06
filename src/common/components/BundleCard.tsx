@@ -1,7 +1,7 @@
 import Card from '@components/Card'
 
-interface BundleCardProps {
-  bundle: bundleData
+type BundleCardProps = {
+  bundle: bundle
 }
 
 function BundleCard({ bundle }: BundleCardProps) {

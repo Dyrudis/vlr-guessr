@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react'
 import BundleCard from '@components/BundleCard'
 import Search from '@components/Search'
 
-interface BrowserProps {
-  data: bundleData[]
-  onResponse: (response: string) => void
+type BrowserProps = {
+  data: bundle[]
+  onResponse: (response: bundle) => void
   attempsRemaining?: number
 }
 
@@ -26,7 +26,7 @@ function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
       <Search onSearch={handleSearch} attempsRemaining={attempsRemaining} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-1 w-full max-w-6xl">
         {filteredBundles?.map((bundle) => (
-          <div className="mx-auto" onClick={() => onResponse(bundle.name)} key={bundle.id}>
+          <div className="mx-auto" onClick={() => onResponse(bundle)} key={bundle.id}>
             <BundleCard bundle={bundle} />
           </div>
         ))}

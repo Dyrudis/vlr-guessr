@@ -1,4 +1,4 @@
-interface MenuItemProps {
+type MenuItemProps = {
   imageUrl?: string
   title?: string
   description?: string

@@ -2,7 +2,7 @@ import { Heart, MagnifyingGlass } from '@phosphor-icons/react'
 
 import Button from '@components/Button'
 
-interface SearchProps {
+type SearchProps = {
   onSearch?: (event: React.ChangeEvent<HTMLInputElement>) => void
   attempsRemaining?: number
 }

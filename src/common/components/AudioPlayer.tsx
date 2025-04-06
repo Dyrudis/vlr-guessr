@@ -1,10 +1,10 @@
-import { useCallback, useRef } from 'react'
+import { HTMLAttributes, useCallback, useRef } from 'react'
 import { ArrowCounterClockwise, Pause, Play } from '@phosphor-icons/react'
 import { useWavesurfer } from '@wavesurfer/react'
 
 import Button from '@components/Button'
 
-interface AudioPlayerProps {
+type AudioPlayerProps = HTMLAttributes<HTMLDivElement> & {
   url: string
 }
 
@@ -16,10 +16,12 @@ function AudioPlayer({ url }: AudioPlayerProps) {
     url: url,
     audioRate: 1.0,
     waveColor: '#d1cfc0',
-    progressColor: '#181818',
+    progressColor: '#949287',
     cursorColor: '#d1cfc0',
-    barWidth: 2,
+    barWidth: 3,
+    barRadius: 3,
     barHeight: 1,
+    height: 75,
     hideScrollbar: true,
     dragToSeek: true,
   })

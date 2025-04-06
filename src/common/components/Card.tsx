@@ -1,4 +1,4 @@
-interface CardProps {
+type CardProps = {
   title?: string
   content: React.ReactNode
   onClick?: () => void
