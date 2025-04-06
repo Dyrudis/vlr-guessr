@@ -13,12 +13,12 @@ function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
   const [filteredBundles, setFilteredBundles] = useState(data)
 
   useEffect(() => {
-    setFilteredBundles(data.sort((a, b) => a.displayName.localeCompare(b.displayName)))
+    setFilteredBundles(data.sort((a, b) => a.name.localeCompare(b.name)))
   }, [data])
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value.toLowerCase()
-    setFilteredBundles(data.filter((bundle) => bundle.displayName.toLowerCase().includes(value)))
+    setFilteredBundles(data.filter((bundle) => bundle.name.toLowerCase().includes(value)))
   }
 
   return (
@@ -26,7 +26,7 @@ function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
       <Search onSearch={handleSearch} attempsRemaining={attempsRemaining} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-1 w-full max-w-6xl">
         {filteredBundles?.map((bundle) => (
-          <div className="mx-auto" onClick={() => onResponse(bundle.displayName)} key={bundle.uuid}>
+          <div className="mx-auto" onClick={() => onResponse(bundle.name)} key={bundle.id}>
             <BundleCard bundle={bundle} />
           </div>
         ))}

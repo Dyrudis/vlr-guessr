@@ -9,8 +9,8 @@ function BundleCard({ bundle }: BundleCardProps) {
     <Card
       content={
         <>
-          <img src={bundle.displayIcon} alt={bundle.displayName} className="w-full h-auto aspect-[16/9] rounded-lg" />
-          <p className="text-center">{bundle.displayName}</p>
+          <img src={bundle.image} alt={bundle.name} className="w-full h-auto aspect-[16/9] rounded-lg" />
+          <p className="text-center">{bundle.name}</p>
         </>
       }
     />

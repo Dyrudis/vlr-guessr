@@ -26,7 +26,7 @@ function FinisherGame() {
 
     setAttemps((prev) => [...prev, response])
 
-    if (response === randomPick?.displayName) {
+    if (response === randomPick?.name) {
       setCanPlay(false)
     } else {
       setAttempsRemaining((prev) => prev - 1)
@@ -35,7 +35,7 @@ function FinisherGame() {
         setCanPlay(false)
         setModalText(
           <p>
-            You lost! The correct answer was <span className="font-extrabold">{randomPick?.displayName}</span>.
+            You lost! The correct answer was <span className="font-extrabold">{randomPick?.name}</span>.
           </p>
         )
         setModalOpen(true)
@@ -52,10 +52,10 @@ function FinisherGame() {
     <>
       <h1 className="text-center mb-2 max-w-2xl px-4">Find the skin bundle based on the finisher sound</h1>
       <p className="mb-16 max-w-2xl px-4">You have 3 attemps to try to find the correct bundle, will you succeed?</p>
-      {randomPick?.displayName && (
+      {randomPick?.name && (
         <>
-          <AudioPlayer url={`finishers/${randomPick.displayName} Kill 5.mp3`} />
-          <Attemps attemps={attemps} correctAnswer={randomPick.displayName} />
+          <AudioPlayer url={`finishers/${randomPick.id}.mp3`} />
+          <Attemps attemps={attemps} correctAnswer={randomPick.name} />
         </>
       )}
       {bundles && <Browser data={bundles} onResponse={handleResponse} attempsRemaining={attempsRemaining} />}
