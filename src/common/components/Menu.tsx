@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router'
 
 import MenuItem from '@components/MenuItem'
+import abilityImage from '@assets/ability.png'
 import aceImage from '@assets/ace.png'
 import mapImage from '@assets/map.png'
 
@@ -22,6 +23,12 @@ function Menu() {
           title="Map Theme"
           description="Find the map based on its theme."
           onClick={() => navigate('/map')}
+        />
+        <MenuItem
+          imageUrl={abilityImage}
+          title="Ability"
+          description="Find the agent and ability based on the sound."
+          onClick={() => navigate('/ability')}
         />
       </div>
     </>

@@ -20,7 +20,16 @@ function App() {
               <Route path="/" element={<Menu />} />
               <Route path="/ace" element={<AceGame />} />
               <Route path="/map" element={<MapGame />} />
-              <Route path="*" element={404} />
+              <Route
+                path="*"
+                element={
+                  <p className="text-center">
+                    GET /404
+                    <br />
+                    This page does not exist (yet)
+                  </p>
+                }
+              />
             </Routes>
           </div>
           <Footer />
