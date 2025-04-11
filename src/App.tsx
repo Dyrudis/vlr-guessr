@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
+import AbilityGame from '@components/AbilityGame'
 import AceGame from '@components/AceGame'
 import Footer from '@components/Footer'
 import Header from '@components/Header'
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<Menu />} />
               <Route path="/ace" element={<AceGame />} />
               <Route path="/map" element={<MapGame />} />
+              <Route path="/ability" element={<AbilityGame />} />
               <Route
                 path="*"
                 element={

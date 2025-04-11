@@ -2,12 +2,12 @@ import { HeartBreak } from '@phosphor-icons/react'
 import { Check } from '@phosphor-icons/react/dist/ssr'
 
 type AttempsProps = {
-  attemps: data[]
-  answer: data
+  attemps: data[] | ability[]
+  answer: data | ability
 }
 
 function Attemps({ attemps, answer: correctAnswer }: AttempsProps) {
-  const isCorrect = (attempt: data) => {
+  const isCorrect = (attempt: data | ability) => {
     return attempt.id === correctAnswer.id
   }
 
