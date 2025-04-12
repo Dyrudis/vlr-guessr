@@ -28,7 +28,8 @@
       "@components/*": ["src/common/components/*"],
       "@types/*": ["src/common/types/*"],
       "@data/*": ["src/common/data/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@utilities/*": ["src/common/utilities/*"],
     }
   },
   "include": ["src", "eslint.config.mjs", "vite.config.ts"]

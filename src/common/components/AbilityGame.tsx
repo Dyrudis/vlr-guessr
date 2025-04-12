@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import AgentBrowser from '@components/AgentBrowser'
 import Attemps from '@components/Attempts'
 import AudioPlayer from '@components/AudioPlayer'
+import Browser from '@components/Browser'
 import Modal, { ModalState } from '@components/Modal'
 import agents from '@data/agents.json'
 
@@ -24,8 +24,10 @@ function AbilityGame() {
     setAnswer(agents[Math.floor(Math.random() * agents.length)].abilities[Math.floor(Math.random() * 4)])
   }, [])
 
-  const handleResponse = (response: ability) => {
+  const handleResponse = (response: bundle | map | ability) => {
     if (hasWon !== undefined) return
+
+    response = response as ability
 
     setAttemps((prev) => [...prev, response])
 
@@ -75,7 +77,7 @@ function AbilityGame() {
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
-      {agents && <AgentBrowser agents={agents} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
+      {agents && <Browser data={agents} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
       <Modal {...modalState} onClose={handleCloseModal}>
         {hasWon ? <WinModal answer={answer!} attemps={attemps} /> : <LoseModal answer={answer!} attemps={attemps} />}
       </Modal>

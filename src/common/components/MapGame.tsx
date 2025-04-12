@@ -24,8 +24,10 @@ function MapGame() {
     setAnswer(maps[Math.floor(Math.random() * maps.length)])
   }, [])
 
-  const handleResponse = (response: map) => {
+  const handleResponse = (response: bundle | map | ability) => {
     if (hasWon !== undefined) return
+
+    response = response as map
 
     setAttemps((prev) => [...prev, response])
 

@@ -1,1 +1,5 @@
-type map = data
+type map = {
+  id: string
+  name: string
+  image: string
+}

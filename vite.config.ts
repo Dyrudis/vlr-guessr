@@ -12,6 +12,7 @@ export default defineConfig({
       '@types': resolve(__dirname, 'src/common/types'),
       '@data': resolve(__dirname, 'src/common/data'),
       '@assets': resolve(__dirname, 'src/assets'),
+      '@utilities': resolve(__dirname, 'src/common/utilities'),
     },
   },
   base: process.env.NODE_ENV === 'development' ? '/' : '/vlr-guessr',

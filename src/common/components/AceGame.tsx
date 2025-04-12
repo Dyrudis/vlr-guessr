@@ -24,8 +24,10 @@ function AceGame() {
     setAnswer(bundles[Math.floor(Math.random() * bundles.length)])
   }, [])
 
-  const handleResponse = (response: bundle) => {
+  const handleResponse = (response: bundle | map | ability) => {
     if (hasWon !== undefined) return
+
+    response = response as bundle
 
     setAttemps((prev) => [...prev, response])
 

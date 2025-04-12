@@ -59,7 +59,7 @@ export default defineConfig([
             // Aliased imports from external libraries
             ['^@'],
             // Aliased imports from project
-            ['^@components', '^@types', '^@data', '^@assets'],
+            ['^@components', '^@types', '^@data', '^@assets', '^@utilities'],
             // Parent imports
             ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
             // Sibling imports
@@ -71,7 +71,7 @@ export default defineConfig([
           ],
         },
       ],
-      'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: true }],
+      'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: false }],
     },
   },
 ])

@@ -4,8 +4,8 @@ import Card from '@components/Card'
 import Search from '@components/Search'
 
 type BrowserProps = {
-  data: data[]
-  onResponse: (response: data) => void
+  data: (bundle | map | agent)[]
+  onResponse: (response: bundle | map | ability) => void
   attempsRemaining?: number
 }
 
@@ -26,8 +26,8 @@ function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
       <Search onSearch={handleSearch} attempsRemaining={attempsRemaining} />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2 w-full max-w-6xl">
         {filteredDatas?.map((data) => (
-          <div className="mx-auto" onClick={() => onResponse(data)} key={data.id}>
-            <Card data={data} />
+          <div className="mx-auto" key={data.id}>
+            <Card data={data} onClick={(response) => onResponse(response)} />
           </div>
         ))}
       </div>
