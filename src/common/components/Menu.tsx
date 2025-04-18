@@ -13,15 +13,9 @@ function Menu() {
       <h1 className="text-center mb-8 px-8">Choose wich mode you want to play</h1>
       <div className="flex items-center justify-center gap-6 flex-wrap px-8">
         <MenuItem
-          imageUrl={aceImage}
-          title="Ace"
-          description="Find the skin bundle based on the ace sound."
-          onClick={() => navigate('/ace')}
-        />
-        <MenuItem
           imageUrl={mapImage}
           title="Map Theme"
-          description="Find the map based on its theme."
+          description="Guess the map by listening to its theme."
           onClick={() => navigate('/map')}
         />
         <MenuItem
@@ -29,6 +23,12 @@ function Menu() {
           title="Ability"
           description="Find the agent and ability based on the sound."
           onClick={() => navigate('/ability')}
+        />
+        <MenuItem
+          imageUrl={aceImage}
+          title="Ace"
+          description="Identify the skin bundle from the ace sound."
+          onClick={() => navigate('/ace')}
         />
       </div>
     </>

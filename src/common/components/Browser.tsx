@@ -2,30 +2,65 @@ import { useEffect, useState } from 'react'
 
 import Card from '@components/Card'
 import Search from '@components/Search'
+import { isAgent } from '@utilities/types'
 
 type BrowserProps = {
   data: (bundle | map | agent)[]
-  onResponse: (response: bundle | map | ability) => void
   attempsRemaining?: number
+  difficulty?: string
+  onResponse: (response: bundle | map | ability) => void
 }
 
-function Browser({ data, onResponse, attempsRemaining }: BrowserProps) {
-  const [filteredDatas, setFilteredDatas] = useState(data)
+function Browser({ data, attempsRemaining, difficulty = 'normal', onResponse }: BrowserProps) {
+  const [sortedDatas, setSortedDatas] = useState<(bundle | map | agent | ability)[]>(data)
 
   useEffect(() => {
-    setFilteredDatas(data.sort((a, b) => a.name.localeCompare(b.name)))
-  }, [data])
+    if (difficulty === 'normal') {
+      setSortedDatas(data.sort((a, b) => a.name.localeCompare(b.name)))
+    }
+    if (difficulty === 'hard') {
+      setSortedDatas(data.sort(() => Math.random() - 0.5))
+    }
+    if (difficulty === 'hard' && isAgent(data[0])) {
+      setSortedDatas(
+        data
+          .map((agent) => (agent as agent).abilities)
+          .flat()
+          .sort((a, b) => a.name.localeCompare(b.name))
+      )
+    }
+  }, [data, difficulty])
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value.toLowerCase()
-    setFilteredDatas(data.filter((data) => data.name.toLowerCase().includes(value)))
+
+    if (difficulty === 'hard' && isAgent(data[0])) {
+      setSortedDatas(
+        data
+          .map((agent) => (agent as agent).abilities)
+          .flat()
+          .filter((ability) => ability.name.toLowerCase().includes(value))
+          .sort((a, b) => a.name.localeCompare(b.name))
+      )
+    } else {
+      setSortedDatas(
+        data.filter((data) => data.name.toLowerCase().includes(value)).sort((a, b) => a.name.localeCompare(b.name))
+      )
+    }
   }
 
   return (
-    <div className="flex flex-col items-center justify-center gap-6">
+    <div className="flex w-full flex-col items-center justify-center gap-6">
       <Search onSearch={handleSearch} attempsRemaining={attempsRemaining} />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2 w-full max-w-6xl">
-        {filteredDatas?.map((data) => (
+      <div
+        className="grid w-full max-w-6xl gap-x-4 gap-y-2"
+        style={{
+          gridTemplateColumns: `repeat(auto-fill, minmax(${
+            difficulty === 'hard' && isAgent(data[0]) ? '128' : '256'
+          }px, 1fr))`,
+        }}
+      >
+        {sortedDatas?.map((data) => (
           <div className="mx-auto" key={data.id}>
             <Card data={data} onClick={(response) => onResponse(response)} />
           </div>

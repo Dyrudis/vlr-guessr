@@ -3,12 +3,13 @@ import { useCallback, useEffect, useState } from 'react'
 import Attemps from '@components/Attempts'
 import AudioPlayer from '@components/AudioPlayer'
 import Browser from '@components/Browser'
+import DifficultySelect from '@components/DifficultySelect'
 import Modal, { ModalState } from '@components/Modal'
 import agents from '@data/agents.json'
 
-const numberOfAttemps = 3
-
 function AbilityGame() {
+  const [difficulty, setDifficulty] = useState<string>('normal')
+  const [numberOfAttemps, setNumberOfAttemps] = useState<number>(3)
   const [answer, setAnswer] = useState<ability | undefined>()
   const [attemps, setAttemps] = useState<ability[]>([])
   const [hasWon, setHasWon] = useState<boolean | undefined>()
@@ -18,7 +19,12 @@ function AbilityGame() {
     children: <></>,
   })
 
-  const getAttempsRemaining = useCallback(() => numberOfAttemps - attemps.length, [attemps])
+  const getAttempsRemaining = useCallback(() => numberOfAttemps - attemps.length, [numberOfAttemps, attemps])
+
+  useEffect(() => {
+    setNumberOfAttemps(difficulty === 'normal' ? 3 : 1)
+    restartGame()
+  }, [difficulty])
 
   useEffect(() => {
     setAnswer(agents[Math.floor(Math.random() * agents.length)].abilities[Math.floor(Math.random() * 4)])
@@ -55,7 +61,7 @@ function AbilityGame() {
     })
   }
 
-  const handleCloseModal = () => {
+  const restartGame = () => {
     setModalState((prev) => ({ ...prev, isOpen: false }))
     setAnswer(
       (prev) =>
@@ -69,16 +75,29 @@ function AbilityGame() {
 
   return (
     <>
-      <h1 className="text-center mb-2 max-w-2xl px-4">Find the ability based on the sound</h1>
-      <p className="mb-16 max-w-2xl px-4">You have 3 attemps to try to find the correct ability, will you succeed?</p>
+      <div className="mb-10 max-w-3xl px-4 text-center">
+        <h1 className="mb-2">What's the ability?</h1>
+        <p className="mb-4">
+          You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to try to find the correct ability, but you can
+          only hear it
+        </p>
+        <DifficultySelect setDifficulty={setDifficulty} difficulties={['normal', 'hard']} />
+      </div>
       {answer?.name && (
         <>
           <AudioPlayer url={`abilities/${answer.agentId}/${answer.id}.wav`} />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
-      {agents && <Browser data={agents} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
-      <Modal {...modalState} onClose={handleCloseModal}>
+      {agents && (
+        <Browser
+          data={agents}
+          onResponse={handleResponse}
+          attempsRemaining={getAttempsRemaining()}
+          difficulty={difficulty}
+        />
+      )}
+      <Modal {...modalState} onClose={restartGame}>
         {hasWon ? <WinModal answer={answer!} attemps={attemps} /> : <LoseModal answer={answer!} attemps={attemps} />}
       </Modal>
     </>

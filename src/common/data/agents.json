@@ -17,6 +17,14 @@
     },
     "abilities": [
       {
+        "id": "87544ad1-89ba-4dcc-aa5b-c28d93b07eba",
+        "agentId": "e370fa57-4757-3604-3648-499e1f642d3f",
+        "slot": "Grenade",
+        "name": "Mosh Pit",
+        "description": "EQUIP Mosh. FIRE to throw Mosh like a grenade. ALT FIRE to lob. Upon landing Mosh duplicates across a large area that deals a small amount of damage over time then after a short delay explodes.",
+        "icon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "89e1f624-e016-4368-ba1f-6de9a6843b68",
         "agentId": "e370fa57-4757-3604-3648-499e1f642d3f",
         "slot": "Ability1",
@@ -31,14 +39,6 @@
         "name": "Dizzy",
         "description": "EQUIP Dizzy. FIRE to send Dizzy soaring forward through the air. Dizzy charges then unleashes plasma blasts at enemies in line of sight. Enemies hit by her plasma are Blinded. When Dizzy expires she reverts into a dormant globule. INTERACT to reclaim the globule and gain another Dizzy charge after a short cooldown.",
         "icon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "87544ad1-89ba-4dcc-aa5b-c28d93b07eba",
-        "agentId": "e370fa57-4757-3604-3648-499e1f642d3f",
-        "slot": "Grenade",
-        "name": "Mosh Pit",
-        "description": "EQUIP Mosh. FIRE to throw Mosh like a grenade. ALT FIRE to lob. Upon landing Mosh duplicates across a large area that deals a small amount of damage over time then after a short delay explodes.",
-        "icon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
       },
       {
         "id": "aaf45fc8-1e31-4af2-89d3-fabdd8a30686",
@@ -68,6 +68,14 @@
     },
     "abilities": [
       {
+        "id": "c945a0b0-b488-47b3-9309-e4c41e4e4d75",
+        "agentId": "dade69b4-4f5a-8528-247b-219e5a1facd6",
+        "slot": "Grenade",
+        "name": "Prowler",
+        "description": "EQUIP a prowler. FIRE to send the prowler forward. HOLD FIRE to steer the prowler towards your crosshair. The prowler will chase down the first enemy or terror trail it sees, and Nearsight the enemy on impact.",
+        "icon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "e599ebd8-6ed9-49ac-97a6-77d77f5f789b",
         "agentId": "dade69b4-4f5a-8528-247b-219e5a1facd6",
         "slot": "Ability1",
@@ -82,14 +90,6 @@
         "name": "Haunt",
         "description": "EQUIP a haunting watcher. FIRE to throw. The watcher drops down after a set time. RE-USE to drop the watcher early. The watcher lashes out on impact, Revealing enemies in its line of sight and creating terror trails to them. Enemies can destroy the watcher.",
         "icon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "c945a0b0-b488-47b3-9309-e4c41e4e4d75",
-        "agentId": "dade69b4-4f5a-8528-247b-219e5a1facd6",
-        "slot": "Grenade",
-        "name": "Prowler",
-        "description": "EQUIP a prowler. FIRE to send the prowler forward. HOLD FIRE to steer the prowler towards your crosshair. The prowler will chase down the first enemy or terror trail it sees, and Nearsight the enemy on impact.",
-        "icon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png"
       },
       {
         "id": "863b46a6-c715-4846-bda7-f5f6e494144c",
@@ -119,6 +119,14 @@
     },
     "abilities": [
       {
+        "id": "dce736e9-9c32-4985-8be7-6987e3483241",
+        "agentId": "5f8d3a7f-467b-97f3-062c-13acf203c006",
+        "slot": "Grenade",
+        "name": "Aftershock",
+        "description": "EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.",
+        "icon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "85382d57-c26b-4cb5-a9df-4fe951495e63",
         "agentId": "5f8d3a7f-467b-97f3-062c-13acf203c006",
         "slot": "Ability1",
@@ -133,14 +141,6 @@
         "name": "Fault Line",
         "description": "EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, Concussing all players in its zone and in a line up to the zone.",
         "icon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "dce736e9-9c32-4985-8be7-6987e3483241",
-        "agentId": "5f8d3a7f-467b-97f3-062c-13acf203c006",
-        "slot": "Grenade",
-        "name": "Aftershock",
-        "description": "EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.",
-        "icon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png"
       },
       {
         "id": "3a6addf8-e5db-452e-bbb5-c095af855b97",
@@ -170,20 +170,20 @@
     },
     "abilities": [
       {
-        "id": "adeff99e-65dd-4590-a700-756835bedcb6",
-        "agentId": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
-        "slot": "Ability1",
-        "name": "Sonic Sensor",
-        "description": "EQUIP a Sonic Sensor. FIRE to deploy. The sensor monitors an area for enemies making sound. It concusses that area if footsteps, weapons fire, or significant noise are detected. This ability can be picked up to be REDEPLOYED.",
-        "icon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability1/displayicon.png"
-      },
-      {
         "id": "48ae7f54-a7c1-4a5e-bfad-89c9e28bee12",
         "agentId": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
         "slot": "Grenade",
         "name": "Barrier Mesh",
         "description": "EQUIP a Barrier Mesh disc. FIRE to throw forward. Upon landing, the disc generates barriers from the origin point that block character movement.",
         "icon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/grenade/displayicon.png"
+      },
+      {
+        "id": "adeff99e-65dd-4590-a700-756835bedcb6",
+        "agentId": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
+        "slot": "Ability1",
+        "name": "Sonic Sensor",
+        "description": "EQUIP a Sonic Sensor. FIRE to deploy. The sensor monitors an area for enemies making sound. It concusses that area if footsteps, weapons fire, or significant noise are detected. This ability can be picked up to be REDEPLOYED.",
+        "icon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability1/displayicon.png"
       },
       {
         "id": "6114338d-7337-4927-8750-93771baa5f2f",
@@ -221,12 +221,12 @@
     },
     "abilities": [
       {
-        "id": "64adb387-f296-4c32-ad67-ccdbe3a2396f",
+        "id": "6b9b7030-1ffb-494f-b6ac-4024cc94d21c",
         "agentId": "b444168c-4e35-8076-db47-ef9bf368f384",
-        "slot": "Ability2",
-        "name": "Guided Salvo",
-        "description": "EQUIP an AR targeting system. FIRE to select up to two target locations on the map. ALT FIRE to launch missiles that autonomously navigate to target locations, detonating on arrival.",
-        "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability2/displayicon.png"
+        "slot": "Grenade",
+        "name": "Stealth Drone",
+        "description": "EQUIP a stealth drone. FIRE to throw the drone forward, assuming direct control of its movement. FIRE again to trigger a pulse that Suppresses and Reveals enemies hit.",
+        "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/grenade/displayicon.png"
       },
       {
         "id": "d344dbbf-77b0-4471-9851-88e8e29d18bd",
@@ -237,20 +237,20 @@
         "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability1/displayicon.png"
       },
       {
+        "id": "64adb387-f296-4c32-ad67-ccdbe3a2396f",
+        "agentId": "b444168c-4e35-8076-db47-ef9bf368f384",
+        "slot": "Ability2",
+        "name": "Guided Salvo",
+        "description": "EQUIP an AR targeting system. FIRE to select up to two target locations on the map. ALT FIRE to launch missiles that autonomously navigate to target locations, detonating on arrival.",
+        "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability2/displayicon.png"
+      },
+      {
         "id": "1e6b5c2e-b689-4a90-b848-c9ecfd7c38b6",
         "agentId": "b444168c-4e35-8076-db47-ef9bf368f384",
         "slot": "Ultimate",
         "name": "Armageddon",
         "description": "EQUIP a tactical strike targeting map. FIRE to select the origin point of the strike. FIRE again to set the end point and launch the attack, unleashing a wave of explosions along the strike path. ALT FIRE during map targeting to cancel the origin point.",
         "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ultimate/displayicon.png"
-      },
-      {
-        "id": "6b9b7030-1ffb-494f-b6ac-4024cc94d21c",
-        "agentId": "b444168c-4e35-8076-db47-ef9bf368f384",
-        "slot": "Grenade",
-        "name": "Stealth Drone",
-        "description": "EQUIP a stealth drone. FIRE to throw the drone forward, assuming direct control of its movement. FIRE again to trigger a pulse that Suppresses and Reveals enemies hit.",
-        "icon": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/grenade/displayicon.png"
       }
     ]
   },
@@ -272,6 +272,14 @@
     },
     "abilities": [
       {
+        "id": "2fb6ec5f-85d6-4aa0-9f0b-9b900a72355a",
+        "agentId": "f94c3b30-42be-e959-889c-5aa313dba261",
+        "slot": "Grenade",
+        "name": "Boom Bot",
+        "description": "EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.",
+        "icon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "13f19744-78f2-4dc7-b50e-c82b9ec4c417",
         "agentId": "f94c3b30-42be-e959-889c-5aa313dba261",
         "slot": "Ability1",
@@ -286,14 +294,6 @@
         "name": "Paint Shells",
         "description": "EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range. ALT FIRE to lob. Paint Shells charge resets every two kills.",
         "icon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "2fb6ec5f-85d6-4aa0-9f0b-9b900a72355a",
-        "agentId": "f94c3b30-42be-e959-889c-5aa313dba261",
-        "slot": "Grenade",
-        "name": "Boom Bot",
-        "description": "EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.",
-        "icon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png"
       },
       {
         "id": "d647d0dd-a5e5-4ab2-93b6-99b6f1f29fea",
@@ -323,14 +323,6 @@
     },
     "abilities": [
       {
-        "id": "45daa8e1-8c4f-4114-8387-a16883413079",
-        "agentId": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
-        "slot": "Ability2",
-        "name": "Rendezvous",
-        "description": "EQUIP a teleport anchor. FIRE to place it on the ground. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor. The anchor can be picked up to be REDEPLOYED.",
-        "icon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png"
-      },
-      {
         "id": "73bda454-af7b-4f70-b670-92bce57edc6b",
         "agentId": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
         "slot": "Grenade",
@@ -345,6 +337,14 @@
         "name": "Headhunter",
         "description": "ACTIVATE to equip a heavy pistol. ALT FIRE with the pistol equipped to aim down sights.",
         "icon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability1/displayicon.png"
+      },
+      {
+        "id": "45daa8e1-8c4f-4114-8387-a16883413079",
+        "agentId": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
+        "slot": "Ability2",
+        "name": "Rendezvous",
+        "description": "EQUIP a teleport anchor. FIRE to place it on the ground. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor. The anchor can be picked up to be REDEPLOYED.",
+        "icon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png"
       },
       {
         "id": "b5c247c8-a4c0-452a-beb2-b7283318cd97",
@@ -425,6 +425,14 @@
     },
     "abilities": [
       {
+        "id": "3e130ed6-8466-4946-bbe4-f89655e295f4",
+        "agentId": "6f2a04ca-43e0-be17-7f36-b3908627744d",
+        "slot": "Grenade",
+        "name": "Regrowth",
+        "description": "EQUIP a healing trinket.  HOLD FIRE to channel, Healing allies in range and line of sight.  Can be reused until her healing pool is depleted.  Skye cannot heal herself.",
+        "icon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "db6d0529-16c1-405f-81d3-916cf1c45d1c",
         "agentId": "6f2a04ca-43e0-be17-7f36-b3908627744d",
         "slot": "Ability1",
@@ -439,14 +447,6 @@
         "name": "Guiding Light",
         "description": "EQUIP a hawk trinket.  FIRE to send it forward. HOLD FIRE to guide the hawk in the direction of your crosshair. RE-USE while the hawk is in flight to transform it into a flash. The flash reaches max potency after a short duration during the hawk's flight.",
         "icon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "3e130ed6-8466-4946-bbe4-f89655e295f4",
-        "agentId": "6f2a04ca-43e0-be17-7f36-b3908627744d",
-        "slot": "Grenade",
-        "name": "Regrowth",
-        "description": "EQUIP a healing trinket.  HOLD FIRE to channel, Healing allies in range and line of sight.  Can be reused until her healing pool is depleted.  Skye cannot heal herself.",
-        "icon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png"
       },
       {
         "id": "3bf923cb-c1c7-4cb6-a16d-b4d33b2bc32e",
@@ -476,6 +476,14 @@
     },
     "abilities": [
       {
+        "id": "1aa16f3e-6b08-4c1e-b35c-f795186e7475",
+        "agentId": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+        "slot": "Grenade",
+        "name": "Trapwire",
+        "description": "EQUIP a trapwire. FIRE to place a destructible and covert trapwire at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a trapwire will be Tethered, Revealed, and Concussed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.",
+        "icon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "3f9cc379-e5c7-4a0a-9711-262c487634eb",
         "agentId": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
         "slot": "Ability1",
@@ -490,14 +498,6 @@
         "name": "Spycam",
         "description": "EQUIP a spycam. FIRE to place the spycam at the targeted location. RE-USE this ability to take control of the camera's view. While in control of the camera, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart. This ability can be picked up to be REDEPLOYED.",
         "icon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "1aa16f3e-6b08-4c1e-b35c-f795186e7475",
-        "agentId": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
-        "slot": "Grenade",
-        "name": "Trapwire",
-        "description": "EQUIP a trapwire. FIRE to place a destructible and covert trapwire at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a trapwire will be Tethered, Revealed, and Concussed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.",
-        "icon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
       },
       {
         "id": "5dcd2411-43b5-41b8-9772-4d3bfc98dc8f",
@@ -527,6 +527,14 @@
     },
     "abilities": [
       {
+        "id": "da7d5738-e608-4997-b3eb-997688feea61",
+        "agentId": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
+        "slot": "Grenade",
+        "name": "Owl Drone",
+        "description": "EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart. Enemies can destroy the Owl Drone.",
+        "icon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "23958c31-ee5f-444a-a055-767531f227a2",
         "agentId": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
         "slot": "Ability1",
@@ -541,14 +549,6 @@
         "name": "Recon Bolt",
         "description": "EQUIP a bow with recon bolt. FIRE to send the recon bolt forward, activating upon collision and Revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD FIRE to extend the range of the projectile. ALT FIRE to add up to two bounces to this arrow. ",
         "icon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "da7d5738-e608-4997-b3eb-997688feea61",
-        "agentId": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
-        "slot": "Grenade",
-        "name": "Owl Drone",
-        "description": "EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart. Enemies can destroy the Owl Drone.",
-        "icon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png"
       },
       {
         "id": "60ab08ef-4d63-4eb8-98ee-117ac22cc259",
@@ -589,7 +589,7 @@
         "id": "4bcd6a0a-8251-414c-8f68-9bf2f31298e8",
         "agentId": "1e58de9c-4950-5125-93e9-a0aee9f98746",
         "slot": "Ability1",
-        "name": "ALARMBOT",
+        "name": "Alarmbot",
         "description": "EQUIP a covert Alarmbot. FIRE to deploy a bot that hunts down enemies that get in range.  After reaching its target, the bot explodes and applies Vulnerable to enemies in the area. HOLD EQUIP to recall a deployed bot.",
         "icon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png"
       },
@@ -597,7 +597,7 @@
         "id": "a1dc0d9c-4c13-472c-ab0d-62e5ac5a1703",
         "agentId": "1e58de9c-4950-5125-93e9-a0aee9f98746",
         "slot": "Ability2",
-        "name": "TURRET",
+        "name": "Turret",
         "description": "EQUIP a Turret. FIRE to deploy a turret that fires at enemies in a 100 degree cone. ALT FIRE to swap turret direction. HOLD EQUIP to recall the deployed turret. ",
         "icon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png"
       },
@@ -629,20 +629,20 @@
     },
     "abilities": [
       {
-        "id": "82ba5cae-51a0-4d6b-9fc4-2d2e45bfef8a",
-        "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
-        "slot": "Ability1",
-        "name": "Cove",
-        "description": "EQUIP a sphere of shielding water. FIRE to throw. ALT FIRE to lob. Upon impacting the ground, spawn a destructible water shield that blocks bullets.",
-        "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png"
-      },
-      {
         "id": "07c94f27-597d-41eb-93eb-f546c82d9812",
         "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "slot": "Grenade",
         "name": "Cascade",
         "description": "EQUIP a wave of water. FIRE to send the wave rolling forward and through walls. RE-USE to stop the wave. Players hit are Slowed.",
         "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/grenade/displayicon.png"
+      },
+      {
+        "id": "82ba5cae-51a0-4d6b-9fc4-2d2e45bfef8a",
+        "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
+        "slot": "Ability1",
+        "name": "Cove",
+        "description": "EQUIP a sphere of shielding water. FIRE to throw. ALT FIRE to lob. Upon impacting the ground, spawn a destructible water shield that blocks bullets.",
+        "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png"
       },
       {
         "id": "081b9111-8e1b-47e6-b608-8f267c004a5b",
@@ -680,6 +680,14 @@
     },
     "abilities": [
       {
+        "id": "75a2c8e3-299a-4a25-b586-80ad8a789fa9",
+        "agentId": "efba5359-4016-a1e5-7626-b1ae76895940",
+        "slot": "Grenade",
+        "name": "Razorvine",
+        "description": "EQUIP a nest of liquid metal. FIRE to launch. Upon landing, the nest becomes invisible. When ACTIVATED, it sprawls out into a large razorvine nest which slows and damages all players who move through it.",
+        "icon": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "4ebba1c7-d120-4829-9afe-97ce6d310f27",
         "agentId": "efba5359-4016-a1e5-7626-b1ae76895940",
         "slot": "Ability1",
@@ -694,14 +702,6 @@
         "name": "Arc Rose",
         "description": "EQUIP an Arc Rose. Target a surface and FIRE to place a stealthed Arc Rose, or ALT FIRE to place the Arc Rose through it. REUSE to blind all players looking at it. This ability can be picked up to be REDEPLOYED.",
         "icon": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "75a2c8e3-299a-4a25-b586-80ad8a789fa9",
-        "agentId": "efba5359-4016-a1e5-7626-b1ae76895940",
-        "slot": "Grenade",
-        "name": "Razorvine",
-        "description": "EQUIP a nest of liquid metal. FIRE to launch. Upon landing, the nest becomes invisible. When ACTIVATED, it sprawls out into a large razorvine nest which slows and damages all players who move through it.",
-        "icon": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/grenade/displayicon.png"
       },
       {
         "id": "158ae199-3d98-4e55-b825-5e4bdb81ea18",
@@ -731,6 +731,14 @@
     },
     "abilities": [
       {
+        "id": "51415698-befe-4012-b7f2-66b044be639f",
+        "agentId": "707eab51-4836-f488-046a-cda6bf494859",
+        "slot": "Grenade",
+        "name": "Snake Bite",
+        "description": "EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.",
+        "icon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "c164b519-ab67-4530-9175-42ab065fc458",
         "agentId": "707eab51-4836-f488-046a-cda6bf494859",
         "slot": "Ability1",
@@ -745,14 +753,6 @@
         "name": "Toxic Screen",
         "description": "EQUIP a gas emitter launcher that penetrates terrain. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.",
         "icon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "51415698-befe-4012-b7f2-66b044be639f",
-        "agentId": "707eab51-4836-f488-046a-cda6bf494859",
-        "slot": "Grenade",
-        "name": "Snake Bite",
-        "description": "EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.",
-        "icon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png"
       },
       {
         "id": "21225c4c-d8eb-4a77-860b-5dd8a7be6aea",
@@ -833,6 +833,14 @@
     },
     "abilities": [
       {
+        "id": "5cc791a3-e06a-49bb-80f7-4535b15ce7e8",
+        "agentId": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
+        "slot": "Grenade",
+        "name": "Gravity Well",
+        "description": "Place Stars in Astral Form (Ultimate Key).\r\n\r\nACTIVATE a Star to form a Gravity Well. Players in the area are pulled toward the center before it explodes, making all players still trapped inside Vulnerable.",
+        "icon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "6b3d0355-df74-4102-b31f-849143feded4",
         "agentId": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
         "slot": "Ability1",
@@ -847,14 +855,6 @@
         "name": "Nebula  / Dissipate",
         "description": "Place Stars in Astral Form (Ultimate Key). \r\n\r\nACTIVATE a Star to transform it into a Nebula (smoke).\r\n\r\nUSE a Star to Dissipate it, returning the Star to be placed in a new location after a delay.\r\n\r\nDissipate briefly forms a fake Nebula at the Star's location before returning.",
         "icon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "5cc791a3-e06a-49bb-80f7-4535b15ce7e8",
-        "agentId": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
-        "slot": "Grenade",
-        "name": "Gravity Well",
-        "description": "Place Stars in Astral Form (Ultimate Key).\r\n\r\nACTIVATE a Star to form a Gravity Well. Players in the area are pulled toward the center before it explodes, making all players still trapped inside Vulnerable.",
-        "icon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/grenade/displayicon.png"
       },
       {
         "id": "bb255008-23e9-47c5-b44b-730b58b1599a",
@@ -935,20 +935,20 @@
     },
     "abilities": [
       {
+        "id": "051b5686-a992-4e40-a7e3-fb4621ba7c06",
+        "agentId": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+        "slot": "Grenade",
+        "name": "Contingency",
+        "description": "EQUIP to assemble prismatic energy. FIRE to push an indestructible wall of energy forward that blocks bullets. ALT FIRE to push out a slower version of the wall.",
+        "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "513fc062-c638-48bd-a561-f158dc93b81a",
         "agentId": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
         "slot": "Ability1",
         "name": "Undercut",
         "description": "EQUIP a molecular bolt. FIRE to throw it forward, briefly applying Vulnerable \u0026 Suppress to all players it touches. The bolt can pass through solid objects, including walls.",
         "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability1/displayicon.png"
-      },
-      {
-        "id": "f810021a-de77-4ad5-ac55-ecdacde039d6",
-        "agentId": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
-        "slot": "Ultimate",
-        "name": "Kill Contract",
-        "description": "EQUIP an interdimensional arena. FIRE to hurl a column of energy through the battlefield, pulling you and the first enemy hit into the arena. You and your opponent duel to the death.",
-        "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ultimate/displayicon.png"
       },
       {
         "id": "35b41e17-8aa3-4cd6-898a-3053297dfb01",
@@ -959,12 +959,12 @@
         "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability2/displayicon.png"
       },
       {
-        "id": "051b5686-a992-4e40-a7e3-fb4621ba7c06",
+        "id": "f810021a-de77-4ad5-ac55-ecdacde039d6",
         "agentId": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
-        "slot": "Grenade",
-        "name": "Contingency",
-        "description": "EQUIP to assemble prismatic energy. FIRE to push an indestructible wall of energy forward that blocks bullets. ALT FIRE to push out a slower version of the wall.",
-        "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/grenade/displayicon.png"
+        "slot": "Ultimate",
+        "name": "Kill Contract",
+        "description": "EQUIP an interdimensional arena. FIRE to hurl a column of energy through the battlefield, pulling you and the first enemy hit into the arena. You and your opponent duel to the death.",
+        "icon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ultimate/displayicon.png"
       }
     ]
   },
@@ -994,6 +994,14 @@
         "icon": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/grenade/displayicon.png"
       },
       {
+        "id": "f3d815c5-4e3e-403d-8641-06351d7611f0",
+        "agentId": "1dbf2edd-4729-0984-3115-daa5eed44993",
+        "slot": "Ability1",
+        "name": "Meddle",
+        "description": "EQUIP a fragment of immortality essence. FIRE to throw the fragment, which upon landing on the floor, erupts after a short delay and temporarily Decays all targets caught inside.",
+        "icon": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability1/displayicon.png"
+      },
+      {
         "id": "a3b4d054-8eff-4049-952f-293c8c4ff5c6",
         "agentId": "1dbf2edd-4729-0984-3115-daa5eed44993",
         "slot": "Ability2",
@@ -1008,14 +1016,6 @@
         "name": "Not Dead Yet",
         "description": "After dying, ACTIVATE to resurrect. Once resurrected, Clove must earn a kill or a damaging assist within a set time or they will die. REACTIVATE to cancel early.",
         "icon": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ultimate/displayicon.png"
-      },
-      {
-        "id": "f3d815c5-4e3e-403d-8641-06351d7611f0",
-        "agentId": "1dbf2edd-4729-0984-3115-daa5eed44993",
-        "slot": "Ability1",
-        "name": "Meddle",
-        "description": "EQUIP a fragment of immortality essence. FIRE to throw the fragment, which upon landing on the floor, erupts after a short delay and temporarily Decays all targets caught inside.",
-        "icon": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability1/displayicon.png"
       }
     ]
   },
@@ -1037,12 +1037,12 @@
     },
     "abilities": [
       {
-        "id": "4a4153b4-9a94-4d11-bd5e-99eda5969f9f",
+        "id": "b8164567-09e4-46dc-90b7-06c2079cefd4",
         "agentId": "bb2a4828-46eb-8cd1-e765-15848195d751",
-        "slot": "Ability2",
-        "name": "High Gear",
-        "description": "INSTANTLY channel Neon's power for Increased Speed. When charged, ALT FIRE to trigger an electric slide dash. Slide charge resets every two kills.",
-        "icon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png"
+        "slot": "Grenade",
+        "name": "Fast Lane",
+        "description": "FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision.",
+        "icon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/grenade/displayicon.png"
       },
       {
         "id": "29f1c048-a63c-4307-852a-e670c4f17b02",
@@ -1053,12 +1053,12 @@
         "icon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability1/displayicon.png"
       },
       {
-        "id": "b8164567-09e4-46dc-90b7-06c2079cefd4",
+        "id": "4a4153b4-9a94-4d11-bd5e-99eda5969f9f",
         "agentId": "bb2a4828-46eb-8cd1-e765-15848195d751",
-        "slot": "Grenade",
-        "name": "Fast Lane",
-        "description": "FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision.",
-        "icon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/grenade/displayicon.png"
+        "slot": "Ability2",
+        "name": "High Gear",
+        "description": "INSTANTLY channel Neon's power for Increased Speed. When charged, ALT FIRE to trigger an electric slide dash. Slide charge resets every two kills.",
+        "icon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png"
       },
       {
         "id": "54dafcd9-63ac-4799-b195-03fc26c14a69",
@@ -1091,7 +1091,7 @@
         "id": "65e3f58f-214b-4de2-94e1-c4f8b1951082",
         "agentId": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
         "slot": "Grenade",
-        "name": "FAKEOUT",
+        "name": "Fakeout",
         "description": "EQUIP an echo that transforms into a mirror image of Yoru when activated. FIRE to instantly activate the mirror image and send it forward. ALT FIRE to place an inactive echo. USE to transform an inactive echo into a mirror image and send it forward.  Mirror images explode in a Blinding flash when destroyed by enemies.",
         "icon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/grenade/displayicon.png"
       },
@@ -1099,7 +1099,7 @@
         "id": "dcd72f70-5156-43e1-bf3d-155d089a4f7c",
         "agentId": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
         "slot": "Ability1",
-        "name": "BLINDSIDE",
+        "name": "Blindside",
         "description": "EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, activating a flash that winds up once it collides with a hard surface.",
         "icon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png"
       },
@@ -1107,7 +1107,7 @@
         "id": "bfb2f531-fc6e-4a15-a7b4-c97d0e328cdd",
         "agentId": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
         "slot": "Ability2",
-        "name": "GATECRASH",
+        "name": "Gatecrash",
         "description": "EQUIP a rift tether FIRE to send the tether forward. ALT FIRE to place a stationary tether. ACTIVATE to teleport to the tether's location. USE to trigger a fake teleport. GATECRASH resets a charge every two kills.",
         "icon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability2/displayicon.png"
       },
@@ -1115,7 +1115,7 @@
         "id": "9135ea4b-abc4-447f-b58f-1d5280f99b7b",
         "agentId": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
         "slot": "Ultimate",
-        "name": "DIMENSIONAL DRIFT",
+        "name": "Dimensional Drift",
         "description": "EQUIP a mask that can see between dimensions. FIRE to drift into Yoru's dimension, unable to be affected or seen by enemies from the outside. REACTIVATE to exit Yoru's dimension early.",
         "icon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png"
       }
@@ -1139,14 +1139,6 @@
     },
     "abilities": [
       {
-        "id": "138738b5-5370-494d-b1cf-5b0513a099d6",
-        "agentId": "df1cb487-4902-002e-5c17-d28e83e78588",
-        "slot": "Ability2",
-        "name": "Refract",
-        "description": "INSTANTLY create a beacon of light on the floor. REACTIVATE to speed back to your beacon as a mote of pure light. You are invulnerable as you travel.",
-        "icon": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability2/displayicon.png"
-      },
-      {
         "id": "d52f21cb-3ed0-4cee-9a0a-998083c30f2f",
         "agentId": "df1cb487-4902-002e-5c17-d28e83e78588",
         "slot": "Grenade",
@@ -1161,6 +1153,14 @@
         "name": "Lightspeed",
         "description": "EQUIP to prepare for a burst of speed. FIRE to dash forward twice. ALT FIRE to dash once. Only your first dash can send you upward.",
         "icon": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability1/displayicon.png"
+      },
+      {
+        "id": "138738b5-5370-494d-b1cf-5b0513a099d6",
+        "agentId": "df1cb487-4902-002e-5c17-d28e83e78588",
+        "slot": "Ability2",
+        "name": "Refract",
+        "description": "INSTANTLY create a beacon of light on the floor. REACTIVATE to speed back to your beacon as a mote of pure light. You are invulnerable as you travel.",
+        "icon": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability2/displayicon.png"
       },
       {
         "id": "1db2e1fb-5693-416b-905a-3aabee19581b",
@@ -1190,6 +1190,14 @@
     },
     "abilities": [
       {
+        "id": "3147cd75-c036-4101-a32c-2e6772baf4b7",
+        "agentId": "569fdd95-4d10-43ab-ca70-79becc718b46",
+        "slot": "Grenade",
+        "name": "Barrier Orb",
+        "description": "EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.",
+        "icon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "09b7a592-2cc6-4b27-b615-09a2de9739a8",
         "agentId": "569fdd95-4d10-43ab-ca70-79becc718b46",
         "slot": "Ability1",
@@ -1204,14 +1212,6 @@
         "name": "Healing Orb",
         "description": "EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a Heal-Over-Time on them. ALT FIRE while Sage is damaged to activate a self Heal-Over-Time.",
         "icon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "3147cd75-c036-4101-a32c-2e6772baf4b7",
-        "agentId": "569fdd95-4d10-43ab-ca70-79becc718b46",
-        "slot": "Grenade",
-        "name": "Barrier Orb",
-        "description": "EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.",
-        "icon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png"
       },
       {
         "id": "06682487-2a0f-4f9c-92bc-0ff9fc42c78a",
@@ -1241,6 +1241,14 @@
     },
     "abilities": [
       {
+        "id": "1e7734b8-2aed-4539-8e45-37b358cf0aa7",
+        "agentId": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
+        "slot": "Grenade",
+        "name": "Leer",
+        "description": "EQUIP an ethereal, destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.",
+        "icon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "c48c060e-791d-41ab-b016-07d5b669ea59",
         "agentId": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
         "slot": "Ability1",
@@ -1255,14 +1263,6 @@
         "name": "Dismiss",
         "description": "INSTANTLY consume a nearby Soul Orb, becoming Intangible for a short duration. If EMPRESS is active, also become Invisible.",
         "icon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "1e7734b8-2aed-4539-8e45-37b358cf0aa7",
-        "agentId": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
-        "slot": "Grenade",
-        "name": "Leer",
-        "description": "EQUIP an ethereal, destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.",
-        "icon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png"
       },
       {
         "id": "578e44be-d5e8-46e5-a6b2-481943c9eee3",
@@ -1292,6 +1292,14 @@
     },
     "abilities": [
       {
+        "id": "65da3c87-e853-4be6-a5d4-7b6540da9648",
+        "agentId": "8e253930-4c05-31dd-1b6c-968525494517",
+        "slot": "Grenade",
+        "name": "Shrouded Step",
+        "description": "EQUIP a shrouded step ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.",
+        "icon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "6c123a2f-a1b4-472a-910f-d09493a8d4d4",
         "agentId": "8e253930-4c05-31dd-1b6c-968525494517",
         "slot": "Ability1",
@@ -1306,14 +1314,6 @@
         "name": "Dark Cover",
         "description": "EQUIP a shadow orb, entering a phased world to place and target the orbs. PRESS the ability key to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while targeting to move the marker further away. HOLD ALT FIRE while targeting to move the marker closer. PRESS RELOAD to toggle normal targeting view.",
         "icon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "65da3c87-e853-4be6-a5d4-7b6540da9648",
-        "agentId": "8e253930-4c05-31dd-1b6c-968525494517",
-        "slot": "Grenade",
-        "name": "Shrouded Step",
-        "description": "EQUIP a shrouded step ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.",
-        "icon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/grenade/displayicon.png"
       },
       {
         "id": "4f0d8c26-8573-4518-8f9c-211be049cb99",
@@ -1343,6 +1343,14 @@
     },
     "abilities": [
       {
+        "id": "2650f8f8-4d61-4816-84a7-33cfb77b50c5",
+        "agentId": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+        "slot": "Grenade",
+        "name": "Cloudburst",
+        "description": "INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.",
+        "icon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png"
+      },
+      {
         "id": "ae0eb340-6b80-4e20-b5e2-a04733ae7503",
         "agentId": "add6443a-41bd-e414-f6ad-e58d267f4e95",
         "slot": "Ability1",
@@ -1357,14 +1365,6 @@
         "name": "Tailwind",
         "description": "ACTIVATE to prepare a gust of wind for a limited time. RE-USE the wind to propel Jett in the direction she is moving. If Jett is standing still, she propels forward. Tailwind charge resets every two kills.",
         "icon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png"
-      },
-      {
-        "id": "2650f8f8-4d61-4816-84a7-33cfb77b50c5",
-        "agentId": "add6443a-41bd-e414-f6ad-e58d267f4e95",
-        "slot": "Grenade",
-        "name": "Cloudburst",
-        "description": "INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.",
-        "icon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png"
       },
       {
         "id": "2710ec71-9d33-4d60-ad75-a1b8a73d960e",

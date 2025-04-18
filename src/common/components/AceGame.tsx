@@ -66,8 +66,14 @@ function AceGame() {
 
   return (
     <>
-      <h1 className="text-center mb-2 max-w-2xl px-4">Find the skin bundle based on the ace sound</h1>
-      <p className="mb-16 max-w-2xl px-4">You have 3 attemps to try to find the correct bundle, will you succeed?</p>
+      <div className="mb-10 max-w-3xl px-4 text-center">
+        <h1 className="mb-2">What's the skin bundle?</h1>
+        <p className="mb-4">
+          You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to try to find the correct skin bundle, but you
+          can only hear the ace sound
+        </p>
+      </div>
+
       {answer?.name && (
         <>
           <AudioPlayer url={`aces/${answer.id}.mp3`} />

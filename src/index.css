@@ -28,8 +28,9 @@
   --color-background-alt: #181818;
 }
 
-* {
-  transition: all 0.2s ease-in-out;
+*:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 h1,

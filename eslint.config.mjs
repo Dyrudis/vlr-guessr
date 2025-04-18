@@ -71,7 +71,7 @@ export default defineConfig([
           ],
         },
       ],
-      'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: false }],
+      'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: true }],
     },
   },
 ])

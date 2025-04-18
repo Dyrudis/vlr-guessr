@@ -48,7 +48,7 @@ function AudioPlayer({ url }: AudioPlayerProps) {
   }
 
   return (
-    <div className="w-full mb-4">
+    <div className="w-full mb-16">
       <div className="mb-4 w-full max-w-md mx-auto px-4" ref={containerRef}></div>
       <div className="flex items-center justify-center gap-4">
         <span className="w-12 text-right font-mono font-extrabold">{`${currentTime.toFixed(1)}s`}</span>
