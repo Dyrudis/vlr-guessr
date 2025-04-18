@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="h-screen flex flex-col bg-background text-text">
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter basename={process.env.NODE_ENV === 'development' ? '/' : '/vlr-guessr'}>
+        <BrowserRouter>
           <Header />
           <div className="flex-grow flex flex-col items-center justify-center">
             <Routes>

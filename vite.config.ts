@@ -15,5 +15,5 @@ export default defineConfig({
       '@utilities': resolve(__dirname, 'src/common/utilities'),
     },
   },
-  base: process.env.NODE_ENV === 'development' ? '/' : '/vlr-guessr',
+  base: '/',
 })
