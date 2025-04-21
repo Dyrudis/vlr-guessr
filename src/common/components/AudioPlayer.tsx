@@ -6,10 +6,12 @@ import Button from '@components/Button'
 import Slider from '@components/Slider'
 
 type AudioPlayerProps = HTMLAttributes<HTMLDivElement> & {
-  url: string
+  url?: string
+  media?: HTMLMediaElement
+  onReady?: (media: HTMLMediaElement) => void
 }
 
-function AudioPlayer({ url }: AudioPlayerProps) {
+function AudioPlayer({ url, media, onReady }: AudioPlayerProps) {
   const containerRef = useRef(null)
   const [volume, setVolume] = useState(0.375)
   const [isMuted, setIsMuted] = useState(false)
@@ -27,6 +29,7 @@ function AudioPlayer({ url }: AudioPlayerProps) {
     height: 75,
     hideScrollbar: true,
     dragToSeek: true,
+    media: media,
   })
 
   const handlePlayPause = useCallback(() => {
@@ -44,8 +47,36 @@ function AudioPlayer({ url }: AudioPlayerProps) {
   }, [wavesurfer, volume, isMuted])
 
   const toggleMuted = () => {
-    setIsMuted((prev) => !prev)
+    setIsMuted((prev) => {
+      localStorage.setItem('isMuted', (!prev).toString())
+      return !prev
+    })
   }
+
+  const handleChangeVolume = (value: number) => {
+    setVolume(value)
+    localStorage.setItem('volume', value.toString())
+  }
+
+  useEffect(() => {
+    const subscription = wavesurfer?.on('ready', () => {
+      onReady && onReady(wavesurfer.getMediaElement())
+
+      const savedVolume = localStorage.getItem('volume')
+      const savedMuted = localStorage.getItem('isMuted')
+      if (savedVolume) {
+        setVolume(parseFloat(savedVolume))
+        wavesurfer.setVolume(parseFloat(savedVolume))
+      }
+      if (savedMuted) {
+        setIsMuted(savedMuted === 'true')
+        wavesurfer.setMuted(savedMuted === 'true')
+      }
+    })
+    return () => {
+      subscription && subscription()
+    }
+  })
 
   return (
     <div className="w-full mb-16">
@@ -60,7 +91,7 @@ function AudioPlayer({ url }: AudioPlayerProps) {
           <div onClick={toggleMuted} className="cursor-pointer">
             <SpeakerIcon volume={volume} isMuted={isMuted} size={20} />
           </div>
-          <Slider value={volume} min={0} max={.75} step={0.01} onChange={setVolume} className="w-32" />
+          <Slider value={volume} min={0} max={0.75} step={0.01} onChange={handleChangeVolume} className="w-32" />
         </div>
       </div>
     </div>

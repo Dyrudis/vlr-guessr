@@ -9,6 +9,7 @@ import bundles from '@data/bundles.json'
 const numberOfAttemps = 3
 
 function AceGame() {
+  const [media, setMedia] = useState<HTMLMediaElement | undefined>()
   const [answer, setAnswer] = useState<bundle | undefined>()
   const [attemps, setAttemps] = useState<bundle[]>([])
   const [hasWon, setHasWon] = useState<boolean | undefined>()
@@ -76,13 +77,17 @@ function AceGame() {
 
       {answer?.name && (
         <>
-          <AudioPlayer url={`aces/${answer.id}.mp3`} />
+          <AudioPlayer url={`aces/${answer.id}.mp3`} onReady={(media) => setMedia(media)} />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
       {bundles && <Browser data={bundles} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
       <Modal {...modalState} onClose={handleCloseModal}>
-        {hasWon ? <WinModal answer={answer!} attemps={attemps} /> : <LoseModal answer={answer!} attemps={attemps} />}
+        {hasWon ? (
+          <WinModal answer={answer!} attemps={attemps} media={media} />
+        ) : (
+          <LoseModal answer={answer!} attemps={attemps} media={media} />
+        )}
       </Modal>
     </>
   )
@@ -90,18 +95,18 @@ function AceGame() {
 
 export default AceGame
 
-const WinModal = ({ answer, attemps }: { answer: bundle; attemps: bundle[] }) => {
+const WinModal = ({ answer, attemps, media }: { answer: bundle; attemps: bundle[]; media?: HTMLMediaElement }) => {
   return (
     <div className="flex flex-col items-center relative">
       <p className="text-center mb-2">Congratulations! You found the correct bundle!</p>
       <Attemps attemps={attemps} answer={answer} />
       <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
-      <AudioPlayer url={`aces/${answer.id}.mp3`} />
+      <AudioPlayer media={media} />
     </div>
   )
 }
 
-const LoseModal = ({ answer, attemps }: { answer: bundle; attemps: bundle[] }) => {
+const LoseModal = ({ answer, attemps, media }: { answer: bundle; attemps: bundle[]; media?: HTMLMediaElement }) => {
   return (
     <div className="flex flex-col items-center relative">
       <p className="text-center mb-2">You have used all your attempts!</p>
@@ -110,7 +115,7 @@ const LoseModal = ({ answer, attemps }: { answer: bundle; attemps: bundle[] }) =
         The correct answer was: <span className="font-extrabold">{answer.name}</span>
       </p>
       <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
-      <AudioPlayer url={`aces/${answer.id}.mp3`} />
+      <AudioPlayer media={media} />
     </div>
   )
 }

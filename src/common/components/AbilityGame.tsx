@@ -8,6 +8,7 @@ import Modal, { ModalState } from '@components/Modal'
 import agents from '@data/agents.json'
 
 function AbilityGame() {
+  const [media, setMedia] = useState<HTMLMediaElement | undefined>()
   const [difficulty, setDifficulty] = useState<string>('normal')
   const [numberOfAttemps, setNumberOfAttemps] = useState<number>(3)
   const [answer, setAnswer] = useState<ability | undefined>()
@@ -85,7 +86,7 @@ function AbilityGame() {
       </div>
       {answer?.name && (
         <>
-          <AudioPlayer url={`abilities/${answer.agentId}/${answer.id}.wav`} />
+          <AudioPlayer url={`abilities/${answer.agentId}/${answer.id}.wav`} onReady={(media) => setMedia(media)} />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
@@ -98,7 +99,11 @@ function AbilityGame() {
         />
       )}
       <Modal {...modalState} onClose={restartGame}>
-        {hasWon ? <WinModal answer={answer!} attemps={attemps} /> : <LoseModal answer={answer!} attemps={attemps} />}
+        {hasWon ? (
+          <WinModal answer={answer!} attemps={attemps} media={media} />
+        ) : (
+          <LoseModal answer={answer!} attemps={attemps} media={media} />
+        )}
       </Modal>
     </>
   )
@@ -106,18 +111,18 @@ function AbilityGame() {
 
 export default AbilityGame
 
-const WinModal = ({ answer, attemps }: { answer: ability; attemps: ability[] }) => {
+const WinModal = ({ answer, attemps, media }: { answer: ability; attemps: ability[]; media?: HTMLMediaElement }) => {
   return (
     <div className="flex flex-col items-center relative">
       <p className="text-center mb-2">Congratulations! You found the correct ability!</p>
       <Attemps attemps={attemps} answer={answer} />
       <img src={answer.icon} alt={answer.name} className="px-4 w-1/2 mb-4" />
-      <AudioPlayer url={`abilities/${answer.agentId}/${answer.id}.wav`} />
+      <AudioPlayer media={media} />
     </div>
   )
 }
 
-const LoseModal = ({ answer, attemps }: { answer: ability; attemps: ability[] }) => {
+const LoseModal = ({ answer, attemps, media }: { answer: ability; attemps: ability[]; media?: HTMLMediaElement }) => {
   return (
     <div className="flex flex-col items-center relative">
       <p className="text-center mb-2">You have used all your attempts!</p>
@@ -126,7 +131,7 @@ const LoseModal = ({ answer, attemps }: { answer: ability; attemps: ability[] })
         The correct answer was: <span className="font-extrabold">{answer.name}</span>
       </p>
       <img src={answer.icon} alt={answer.name} className="px-4 w-1/2 mb-4" />
-      <AudioPlayer url={`abilities/${answer.agentId}/${answer.id}.wav`} />
+      <AudioPlayer media={media} />
     </div>
   )
 }
