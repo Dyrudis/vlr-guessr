@@ -61,9 +61,7 @@ function Browser({ data, attempsRemaining, difficulty = 'normal', onResponse }: 
         }}
       >
         {sortedDatas?.map((data) => (
-          <div className="mx-auto" key={data.id}>
-            <Card data={data} onClick={(response) => onResponse(response)} />
-          </div>
+          <Card data={data} onClick={(response) => onResponse(response)} key={data.id} />
         ))}
       </div>
     </div>
