@@ -22,21 +22,19 @@ function Modal({ isOpen, onClose, title, children }: ModalProps) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-[#000000a0] bg-opacity-50">
-      <div className="bg-background rounded-lg shadow-lg p-6 w-full max-w-md relative mx-2">
-        <X
-          size={32}
-          className="absolute p-1 top-4 right-4 rounded-md hover:bg-background-alt cursor-pointer"
-          onClick={onClose}
-        />
-        <h2 className="text-xl font-semibold mb-4">{title}</h2>
+    <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center z-50 bg-[#000000a0]">
+      <div className="bg-background rounded-lg shadow-lg p-6 w-full max-w-md  mx-2">
+        <div className='flex items-center mb-4 justify-between'>
+          <h2 className="text-xl font-semibold">{title}</h2>
+          <X size={32} className="rounded-md hover:bg-background-alt cursor-pointer" onClick={onClose} />
+        </div>
         {children}
         <div className="flex justify-center gap-4">
-          <Button className='w-full flex items-center justify-center gap-2' onClick={() => navigate('/')}>
+          <Button className="w-full flex items-center justify-center gap-2" onClick={() => navigate('/')}>
             <House />
             Back home
           </Button>
-          <Button className='w-full flex items-center justify-center gap-2' onClick={onClose}>
+          <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
             <ArrowsClockwise />
             Play again
           </Button>

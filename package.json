@@ -1,7 +1,7 @@
 {
   "name": "vlr-guessr",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "homepage": "https://dyrudis.github.io/vlr-guessr",
   "scripts": {
@@ -21,6 +21,7 @@
     "@wavesurfer/react": "^1.0.10",
     "classnames": "^2.5.1",
     "react": "^19.0.0",
+    "react-confetti-boom": "^1.1.2",
     "react-dom": "^19.0.0",
     "react-router": "^7.5.0",
     "tailwindcss": "^4.1.3"

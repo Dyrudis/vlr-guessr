@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import Confetti from 'react-confetti-boom'
 
 import Attemps from '@components/Attempts'
 import AudioPlayer from '@components/AudioPlayer'
@@ -94,12 +95,32 @@ export default MapGame
 
 const WinModal = ({ answer, attemps, media }: { answer: map; attemps: map[]; media?: HTMLMediaElement }) => {
   return (
-    <div className="flex flex-col items-center relative">
-      <p className="text-center mb-2">Congratulations! You found the correct map!</p>
-      <Attemps attemps={attemps} answer={answer} />
-      <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
-      <AudioPlayer media={media} />
-    </div>
+    <>
+      <Confetti
+        particleCount={60}
+        spreadDeg={60}
+        x={0.35}
+        y={0.4}
+        deg={-135}
+        launchSpeed={1.5}
+        colors={['#FF7777', '#77FF77', '#7777FF', '#FFFF77', '#FF77FF', '#77FFFF']}
+      />
+      <Confetti
+        particleCount={60}
+        spreadDeg={60}
+        x={0.65}
+        y={0.4}
+        deg={-45}
+        launchSpeed={1.5}
+        colors={['#FF7777', '#77FF77', '#7777FF', '#FFFF77', '#FF77FF', '#77FFFF']}
+      />
+      <div className="flex flex-col items-center relative">
+        <p className="text-center mb-2">Congratulations! You found the correct map!</p>
+        <Attemps attemps={attemps} answer={answer} />
+        <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
+        <AudioPlayer media={media} />
+      </div>
+    </>
   )
 }
 
