@@ -12,7 +12,7 @@ function Attemps({ attemps, answer: correctAnswer }: AttempsProps) {
   }
 
   return (
-    <div className="flex items-center justify-center flex-wrap gap-x-2 gap-y-0 mb-2 h-9">
+    <div className="flex items-center justify-center flex-wrap gap-x-2 gap-y-0 mb-2 min-h-9">
       {attemps.map((attempt, index) => (
         <div
           key={index}
