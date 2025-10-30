@@ -2,7 +2,7 @@
 
 ![vlr-guessr Icon](src/assets/icon.svg)
 
-**vlr-guessr** is a web game where players can test their knowledge of Valorant SFX. The game challenges users to identify maps, agent/abilities and skin bundles based on the audio. You can access the website [here](https://vlr-guessr.pages.dev/).
+**vlr-guessr** is a web game where players can test their knowledge of Valorant SFX. The game challenges users to identify maps, agent/abilities, skin bundles and footsteps based on the audio. You can access the website [here](https://vlr-guessr.pages.dev/).
 
 ## Screenshots
 
@@ -11,11 +11,14 @@
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
+- [vlr-guessr](#vlr-guessr)
+  - [Screenshots](#screenshots)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Development](#development)
+  - [Contributing](#contributing)
+  - [Acknowledgments](#acknowledgments)
 
 ## Installation
 

@@ -2,17 +2,18 @@ import { useEffect, useState } from 'react'
 
 import Card from '@components/Card'
 import Search from '@components/Search'
-import { isAgent } from '@utilities/types'
+import { isAgent, isFootsteps } from '@utilities/types'
 
 type BrowserProps = {
-  data: (bundle | map | agent)[]
+  data: (bundle | map | agent | footsteps)[]
   attempsRemaining?: number
   difficulty?: string
-  onResponse: (response: bundle | map | ability) => void
+  attemps: (bundle | map | ability | footsteps)[]
+  onResponse: (response: bundle | map | ability | footsteps) => void
 }
 
-function Browser({ data, attempsRemaining, difficulty = 'normal', onResponse }: BrowserProps) {
-  const [sortedDatas, setSortedDatas] = useState<(bundle | map | agent | ability)[]>(data)
+function Browser({ data, attempsRemaining, difficulty = 'normal', attemps, onResponse }: BrowserProps) {
+  const [sortedDatas, setSortedDatas] = useState<(bundle | map | agent | ability | footsteps)[]>(data)
 
   useEffect(() => {
     if (difficulty === 'normal') {
@@ -28,6 +29,9 @@ function Browser({ data, attempsRemaining, difficulty = 'normal', onResponse }: 
           .flat()
           .sort((a, b) => a.name.localeCompare(b.name))
       )
+    }
+    if (isFootsteps(data[0])) {
+      setSortedDatas(data.sort((a, b) => (b as footsteps).agentsIds.length - (a as footsteps).agentsIds.length))
     }
   }, [data, difficulty])
 
@@ -61,7 +65,12 @@ function Browser({ data, attempsRemaining, difficulty = 'normal', onResponse }: 
         }}
       >
         {sortedDatas?.map((data) => (
-          <Card data={data} onClick={(response) => onResponse(response)} key={data.id} />
+          <Card
+            data={data}
+            onClick={(response) => onResponse(response)}
+            key={data.id}
+            attemps={attemps}
+          />
         ))}
       </div>
     </div>

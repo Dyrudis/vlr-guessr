@@ -32,7 +32,7 @@ function Modal({ isOpen, onClose, title, children }: ModalProps) {
         <div className="flex justify-center gap-4">
           <Button className="w-full flex items-center justify-center gap-2" onClick={() => navigate('/')}>
             <House />
-            Back home
+            Change mode
           </Button>
           <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
             <ArrowsClockwise />

@@ -24,7 +24,7 @@ function AbilityGame() {
   const getAttempsRemaining = useCallback(() => numberOfAttemps - attemps.length, [numberOfAttemps, attemps])
 
   useEffect(() => {
-    setNumberOfAttemps(difficulty === 'normal' ? 3 : 1)
+    setNumberOfAttemps(3)
     restartGame()
   }, [difficulty])
 
@@ -32,7 +32,7 @@ function AbilityGame() {
     setAnswer(agents[Math.floor(Math.random() * agents.length)].abilities[Math.floor(Math.random() * 4)])
   }, [])
 
-  const handleResponse = (response: bundle | map | ability) => {
+  const handleResponse = (response: bundle | map | ability | footsteps) => {
     if (hasWon !== undefined) return
 
     response = response as ability
@@ -46,6 +46,11 @@ function AbilityGame() {
         isOpen: true,
         title: 'You Won!',
       }))
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
     } else {
       if (getAttempsRemaining() <= 1) {
         setHasWon(false)
@@ -54,13 +59,13 @@ function AbilityGame() {
           isOpen: true,
           title: 'Game Over',
         }))
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
       }
     }
-
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
   }
 
   const restartGame = () => {
@@ -78,10 +83,10 @@ function AbilityGame() {
   return (
     <>
       <div className="mb-10 max-w-3xl px-4 text-center">
-        <h1 className="mb-2">What's the ability?</h1>
+        <h1 className="mb-2">What's The Ability?</h1>
         <p className="mb-4">
-          You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to try to find the correct ability, but you can
-          only hear it
+          Each agent in the game has 4 unique abilities that produce distinct sounds. You have {numberOfAttemps} attempt
+          {numberOfAttemps > 1 && 's'} to try to find the correct ability, but you can only hear it.
         </p>
         <DifficultySelect setDifficulty={setDifficulty} difficulties={['normal', 'hard']} />
       </div>
@@ -97,6 +102,7 @@ function AbilityGame() {
           onResponse={handleResponse}
           attempsRemaining={getAttempsRemaining()}
           difficulty={difficulty}
+          attemps={attemps}
         />
       )}
       <Modal {...modalState} onClose={restartGame}>

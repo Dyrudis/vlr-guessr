@@ -4,9 +4,9 @@ function Footer() {
   return (
     <footer className="m-8 mb-4 p-4 rounded-lg flex items-center justify-start gap-4">
       <span className="text-sm">
-        Made with ❤️ by{' '}
+        Made by{' '}
         <a href="https://github.com/dyrudis" target="_blank">
-          <span className='bg-background-alt rounded-md py-1 px-2'>Dyrudis</span>
+          <span className="bg-background-alt rounded-md py-1 px-2">Dyrudis</span>
         </a>
       </span>
       <a
@@ -15,7 +15,7 @@ function Footer() {
         className="ml-auto flex items-center hover:bg-primary hover:text-background px-2 py-1 rounded-md cursor-pointer"
       >
         <GitBranch size={24} />
-        <span className="ml-2">v1.3.0</span>
+        <span className="ml-2">v1.4.0</span>
       </a>
     </footer>
   )

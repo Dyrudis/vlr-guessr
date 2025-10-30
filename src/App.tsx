@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import AbilityGame from '@components/AbilityGame'
 import AceGame from '@components/AceGame'
 import Footer from '@components/Footer'
+import FootstepsGame from '@components/FootstepsGame'
 import Header from '@components/Header'
 import MapGame from '@components/MapGame'
 import Menu from '@components/Menu'
@@ -19,9 +20,10 @@ function App() {
           <div className="flex-grow flex flex-col items-center justify-center">
             <Routes>
               <Route path="/" element={<Menu />} />
-              <Route path="/ace" element={<AceGame />} />
               <Route path="/map" element={<MapGame />} />
               <Route path="/ability" element={<AbilityGame />} />
+              <Route path="/ace" element={<AceGame />} />
+              <Route path="/footsteps" element={<FootstepsGame />} />
               <Route
                 path="*"
                 element={

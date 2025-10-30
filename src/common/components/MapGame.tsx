@@ -26,7 +26,7 @@ function MapGame() {
     setAnswer(maps[Math.floor(Math.random() * maps.length)])
   }, [])
 
-  const handleResponse = (response: bundle | map | ability) => {
+  const handleResponse = (response: bundle | map | ability | footsteps) => {
     if (hasWon !== undefined) return
 
     response = response as map
@@ -40,6 +40,11 @@ function MapGame() {
         isOpen: true,
         title: 'You Won!',
       }))
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
     } else {
       if (getAttempsRemaining() <= 1) {
         setHasWon(false)
@@ -48,13 +53,13 @@ function MapGame() {
           isOpen: true,
           title: 'Game Over',
         }))
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
       }
     }
-
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
   }
 
   const handleCloseModal = () => {
@@ -67,10 +72,11 @@ function MapGame() {
   return (
     <>
       <div className="mb-10 max-w-3xl px-4 text-center">
-        <h1 className="mb-2">What's the map?</h1>
+        <h1 className="mb-2">What's The Map?</h1>
         <p className="mb-4">
-          You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to try to find the correct map, but you can
-          only hear the theme playing when a game starts
+          Every map in the game has its own unique theme that is played during the buy phase of the first round of every
+          game. You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to find the correct map, but you can only
+          hear its theme.
         </p>
       </div>
       {answer?.name && (
@@ -79,7 +85,9 @@ function MapGame() {
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
-      {maps && <Browser data={maps} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} />}
+      {maps && (
+        <Browser data={maps} onResponse={handleResponse} attempsRemaining={getAttempsRemaining()} attemps={attemps} />
+      )}
       <Modal {...modalState} onClose={handleCloseModal}>
         {hasWon ? (
           <WinModal answer={answer!} attemps={attemps} media={media} />
