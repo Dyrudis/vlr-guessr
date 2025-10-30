@@ -96,8 +96,8 @@ function Card({ data, onClick }: CardProps) {
             onLoad={() => setIsLoading(false)}
             className="w-full h-auto aspect-[16/9] rounded-lg"
           />
-          <p className="text-center">{bundleOrMap.name}</p>
         </div>
+        <p className="text-center">{bundleOrMap.name}</p>
       </div>
     )
   }
@@ -123,11 +123,6 @@ const SkeletonAgent = () => (
   </>
 )
 
-const SkeletonBundleOrMap = () => (
-  <>
-    <Skeleton className="min-w-full w-full h-auto aspect-[16/9] mb-2" />
-    <Skeleton className="w-20 h-4 mx-auto" />
-  </>
-)
+const SkeletonBundleOrMap = () => <Skeleton className="min-w-full w-full h-auto aspect-[16/9] mb-2" />
 
 export default Card
