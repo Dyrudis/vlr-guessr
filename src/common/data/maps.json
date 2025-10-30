@@ -50,6 +50,11 @@
     "image": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/splash.png"
   },
   {
+    "id": "1c18ab1f-420d-0d8b-71d0-77ad3c439115",
+    "name": "Corrode",
+    "image": "https://media.valorant-api.com/maps/1c18ab1f-420d-0d8b-71d0-77ad3c439115/splash.png"
+  },
+  {
     "id": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
     "name": "Haven",
     "image": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/splash.png"

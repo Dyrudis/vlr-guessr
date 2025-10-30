@@ -816,6 +816,60 @@
     ]
   },
   {
+    "id": "92eeef5d-43b5-1d4a-8d03-b3927a09034b",
+    "name": "Veto",
+    "description": "Empowered by an unstoppable DNA mutation, Senegalese enforcer Veto defies the rules of engagement by nullifying his opponent's powers and technology. On Veto's battlefield, gunplay is your only guarantee.",
+    "developerName": "Pine",
+    "releaseDate": "2025-10-07T22:00:00Z",
+    "characterTags": null,
+    "icon": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/displayicon.png",
+    "portrait": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/fullportrait.png",
+    "killfeedPortrait": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/killfeedportrait.png",
+    "background": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/background.png",
+    "backgroundGradientColors": ["1f6178ff", "0e2c41ff", "05e2e9ff", "1a5d65ff"],
+    "role": {
+      "id": "5fc02f99-4091-4486-a531-98459a3e95e9",
+      "name": "Sentinel",
+      "description": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
+      "icon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png"
+    },
+    "abilities": [
+      {
+        "id": "25ff44d4-a65c-419f-a899-12af00e1ef4c",
+        "agentId": "92eeef5d-43b5-1d4a-8d03-b3927a09034b",
+        "slot": "Grenade",
+        "name": "Crosscut",
+        "description": "EQUIP a vortex. FIRE to place on the ground. While in range and looking at the vortex, ACTIVATE to teleport to the vortex. During the BUY PHASE, the vortex can be reclaimed to be REDEPLOYED.",
+        "icon": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/grenade/displayicon.png"
+      },
+      {
+        "id": "6be913cf-1029-4f44-baec-f1833b467cfa",
+        "agentId": "92eeef5d-43b5-1d4a-8d03-b3927a09034b",
+        "slot": "Ability1",
+        "name": "Chokehold",
+        "description": "EQUIP a viscous fragment of your mutation. FIRE to throw. The fragment deploys upon hitting the ground, creating a trap to hold enemies in place. Held enemies are Deafened, and Decayed. Enemies can destroy the trap before activation.",
+        "icon": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ability1/displayicon.png"
+      },
+      {
+        "id": "1887db6e-0bb1-4509-8027-4b4db9ba6023",
+        "agentId": "92eeef5d-43b5-1d4a-8d03-b3927a09034b",
+        "slot": "Ability2",
+        "name": "Interceptor",
+        "description": "EQUIP the Interceptor. FIRE to place the Interceptor at projected location. Once placed, RE-USE to activate. Once active, it will destroy any utility that would BOUNCE off a player and/or be destroyed naturally by gunfire. Enemies can destroy the Interceptor.",
+        "icon": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ability2/displayicon.png"
+      },
+      {
+        "id": "dc915398-3a51-43f5-b5fc-de09060f5528",
+        "agentId": "92eeef5d-43b5-1d4a-8d03-b3927a09034b",
+        "slot": "Ultimate",
+        "name": "Evolution",
+        "description": "INSTANTLY begin to fully mutate, gaining a combat stim, regeneration, and becoming IMMUNE to all forms of debuffs.",
+        "icon": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ultimate/displayicon.png"
+      }
+    ],
+    "voiceLine": null
+  },
+  {
     "id": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
     "name": "Astra",
     "description": "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.",

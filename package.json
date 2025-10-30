@@ -1,7 +1,7 @@
 {
   "name": "vlr-guessr",
   "private": true,
-  "version": "1.2.0",
+  "version": "1.3.0",
   "type": "module",
   "homepage": "https://dyrudis.github.io/vlr-guessr",
   "scripts": {

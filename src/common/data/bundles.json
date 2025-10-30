@@ -239,5 +239,35 @@
     "id": "ab83f73d-485f-e010-8ea0-24b538468a1a",
     "name": "Protocol 781-A",
     "image": "https://media.valorant-api.com/bundles/ab83f73d-485f-e010-8ea0-24b538468a1a/displayicon.png"
+  },
+  {
+    "id": "4d9966e8-4dc9-cd1f-9e57-f6844f4b5da1",
+    "name": "Divergence",
+    "image": "https://media.valorant-api.com/bundles/4d9966e8-4dc9-cd1f-9e57-f6844f4b5da1/displayicon.png"
+  },
+  {
+    "id": "4339220e-4dd2-14e8-f20b-299c90620741",
+    "name": "Phaseguard",
+    "image": "https://media.valorant-api.com/bundles/4339220e-4dd2-14e8-f20b-299c90620741/displayicon.png"
+  },
+  {
+    "id": "00b9a5cd-49fa-0619-2657-c0bc7f35778a",
+    "name": "SplashX",
+    "image": "https://media.valorant-api.com/bundles/00b9a5cd-49fa-0619-2657-c0bc7f35778a/displayicon.png"
+  },
+  {
+    "id": "f0eb5967-446e-cac1-cb69-008cf2538c84",
+    "name": "Bubblegum Deathwish",
+    "image": "https://media.valorant-api.com/bundles/f0eb5967-446e-cac1-cb69-008cf2538c84/displayicon.png"
+  },
+  {
+    "id": "c18084b7-46ea-8231-28dd-808d9f4b4e66",
+    "name": "Champions 2025",
+    "image": "https://media.valorant-api.com/bundles/c18084b7-46ea-8231-28dd-808d9f4b4e66/displayicon.png"
+  },
+  {
+    "id": "f4015c5e-4c32-20ad-11bc-7ebc39293bc1",
+    "name": "Dolmir's Revenge",
+    "image": "https://media.valorant-api.com/bundles/f4015c5e-4c32-20ad-11bc-7ebc39293bc1/displayicon.png"
   }
 ]

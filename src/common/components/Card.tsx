@@ -52,9 +52,9 @@ function Card({ data, onClick }: CardProps) {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="opacity-90" side="bottom">
-                    <div className="text-center w-100">
+                    <div className="text-center w-auto">
                       <p className="font-extrabold">{ability.name}</p>
-                      <p>{ability.description}</p>
+                      {/*<p>{ability.description}</p> */}
                     </div>
                   </TooltipContent>
                 </Tooltip>
