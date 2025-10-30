@@ -75,7 +75,7 @@ function MapGame() {
       </div>
       {answer?.name && (
         <>
-          <AudioPlayer url={`maps/${answer.id}.mp3`} onReady={(media) => setMedia(media)} />
+          <AudioPlayer url={`maps/sounds/${answer.id}.mp3`} onReady={(media) => setMedia(media)} />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}

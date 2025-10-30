@@ -78,7 +78,7 @@ function AceGame() {
 
       {answer?.name && (
         <>
-          <AudioPlayer url={`aces/${answer.id}.mp3`} onReady={(media) => setMedia(media)} />
+          <AudioPlayer url={`bundles/sounds/${answer.id}.mp3`} onReady={(media) => setMedia(media)} />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}

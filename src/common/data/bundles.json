@@ -2,272 +2,271 @@
   {
     "id": "d958b181-4e7b-dc60-7c3c-e3a3a376a8d2",
     "name": "RGX 11z Pro",
-    "image": "https://media.valorant-api.com/bundles/d958b181-4e7b-dc60-7c3c-e3a3a376a8d2/displayicon.png"
+    "image": "bundles/images/RGX 11z Pro.png"
   },
   {
     "id": "a4c613c9-4970-61ca-e52a-918ae22f5315",
     "name": "Araxys",
-    "image": "https://media.valorant-api.com/bundles/a4c613c9-4970-61ca-e52a-918ae22f5315/displayicon.png"
+    "image": "bundles/images/Araxys.png"
   },
   {
     "id": "2bf87e2c-4a27-b9c7-3cf4-0c840a82d6dd",
     "name": "Neptune",
-    "image": "https://media.valorant-api.com/bundles/2bf87e2c-4a27-b9c7-3cf4-0c840a82d6dd/displayicon.png"
+    "image": "bundles/images/Neptune.png"
   },
   {
     "id": "3d2fd628-4ceb-0029-a737-9682ce8eb5e9",
     "name": "Radiant Entertainment System",
-    "image": "https://media.valorant-api.com/bundles/3d2fd628-4ceb-0029-a737-9682ce8eb5e9/displayicon.png"
+    "image": "bundles/images/Radiant Entertainment System.png"
   },
   {
     "id": "e10e00ae-4dcc-3c4a-16f7-7e885314f0d0",
     "name": "Gaia's Vengeance",
-    "image": "https://media.valorant-api.com/bundles/e10e00ae-4dcc-3c4a-16f7-7e885314f0d0/displayicon.png"
+    "image": "bundles/images/Gaia's Vengeance.png"
   },
   {
     "id": "f7f37856-4af7-9b0e-08aa-91a5207c0439",
     "name": "Spectrum",
-    "image": "https://media.valorant-api.com/bundles/f7f37856-4af7-9b0e-08aa-91a5207c0439/displayicon.png"
+    "image": "bundles/images/Spectrum.png"
   },
   {
     "id": "ba0f18a9-4b4b-4a1a-15c8-1cb5d8e81a66",
     "name": "Bolt",
-    "image": "https://media.valorant-api.com/bundles/ba0f18a9-4b4b-4a1a-15c8-1cb5d8e81a66/displayicon.png"
+    "image": "bundles/images/Bolt.png"
   },
   {
     "id": "bf987f36-4a33-45e4-3c49-1ab9a2502607",
     "name": "Champions 2021",
-    "image": "https://media.valorant-api.com/bundles/bf987f36-4a33-45e4-3c49-1ab9a2502607/displayicon.png"
+    "image": "bundles/images/Champions 2021.png"
   },
   {
     "id": "f99e5b38-48c7-1146-acfa-9baaf773b844",
     "name": "Champions 2022",
-    "image": "https://media.valorant-api.com/bundles/f99e5b38-48c7-1146-acfa-9baaf773b844/displayicon.png"
+    "image": "bundles/images/Champions 2022.png"
   },
   {
     "id": "90ee89df-40cf-03d3-420f-3d9a1b81d85b",
     "name": "Champions 2023",
-    "image": "https://media.valorant-api.com/bundles/90ee89df-40cf-03d3-420f-3d9a1b81d85b/displayicon.png"
+    "image": "bundles/images/Champions 2023.png"
   },
   {
     "id": "422a7fba-4bfa-fe5e-0e79-d7b553071089",
     "name": "Champions 2024",
-    "image": "https://media.valorant-api.com/bundles/422a7fba-4bfa-fe5e-0e79-d7b553071089/displayicon.png"
+    "image": "bundles/images/Champions 2024.png"
   },
   {
     "id": "54f8793c-4daa-6e45-bcfd-e9bfc742dc30",
     "name": "Origin",
-    "image": "https://media.valorant-api.com/bundles/54f8793c-4daa-6e45-bcfd-e9bfc742dc30/displayicon.png"
+    "image": "bundles/images/Origin.png"
   },
   {
     "id": "7738edd6-4c85-9c9c-bcad-80b6d282b4d2",
     "name": "Nocturnum",
-    "image": "https://media.valorant-api.com/bundles/7738edd6-4c85-9c9c-bcad-80b6d282b4d2/displayicon.png"
+    "image": "bundles/images/Nocturnum.png"
   },
   {
     "id": "51bccace-45c9-72c4-56d6-b097a4791c2f",
     "name": "Doombringer",
-    "image": "https://media.valorant-api.com/bundles/51bccace-45c9-72c4-56d6-b097a4791c2f/displayicon.png"
+    "image": "bundles/images/Doombringer.png"
   },
   {
     "id": "fc723fef-444a-4013-a741-3e85a97382f2",
     "name": "Glitchpop",
-    "image": "https://media.valorant-api.com/bundles/fc723fef-444a-4013-a741-3e85a97382f2/displayicon.png"
+    "image": "bundles/images/Glitchpop.png"
   },
   {
     "id": "a5da7b5a-49a4-8fa9-a1c6-01a9aced0f9f",
     "name": "ChronoVoid",
-    "image": "https://media.valorant-api.com/bundles/a5da7b5a-49a4-8fa9-a1c6-01a9aced0f9f/displayicon.png"
+    "image": "bundles/images/ChronoVoid.png"
   },
   {
     "id": "526f7d0c-414b-24bb-bcd0-10aed1f3e824",
     "name": "Prelude to Chaos",
-    "image": "https://media.valorant-api.com/bundles/526f7d0c-414b-24bb-bcd0-10aed1f3e824/displayicon.png"
+    "image": "bundles/images/Prelude to Chaos.png"
   },
   {
     "id": "1ba50cf0-46dd-848f-13a9-dc92fb0a3e3b",
     "name": "Elderflame",
-    "image": "https://media.valorant-api.com/bundles/1ba50cf0-46dd-848f-13a9-dc92fb0a3e3b/displayicon.png"
+    "image": "bundles/images/Elderflame.png"
   },
   {
     "id": "e6032bbf-403e-47e4-8fbc-a1b212d966e7",
     "name": "Imperium",
-    "image": "https://media.valorant-api.com/bundles/e6032bbf-403e-47e4-8fbc-a1b212d966e7/displayicon.png"
+    "image": "bundles/images/Imperium.png"
   },
   {
     "id": "ef72e3c0-467b-ab15-076a-1e9690d16d6f",
     "name": "Singularity",
-    "image": "https://media.valorant-api.com/bundles/ef72e3c0-467b-ab15-076a-1e9690d16d6f/displayicon.png"
+    "image": "bundles/images/Singularity.png"
   },
   {
     "id": "1b98ee1c-4d9a-9e9d-0b36-f1a001a76628",
     "name": "Forsaken",
-    "image": "https://media.valorant-api.com/bundles/1b98ee1c-4d9a-9e9d-0b36-f1a001a76628/displayicon.png"
+    "image": "bundles/images/Forsaken.png"
   },
   {
     "id": "550d9d34-4942-a605-ba3c-b09452e52f83",
     "name": "Neo Frontier",
-    "image": "https://media.valorant-api.com/bundles/550d9d34-4942-a605-ba3c-b09452e52f83/displayicon.png"
+    "image": "bundles/images/Neo Frontier.png"
   },
   {
     "id": "22ad3cea-4b3e-b6e9-e1ee-c498a45f14ee",
     "name": "Primordium",
-    "image": "https://media.valorant-api.com/bundles/22ad3cea-4b3e-b6e9-e1ee-c498a45f14ee/displayicon.png"
+    "image": "bundles/images/Primordium.png"
   },
   {
     "id": "648f655e-4df1-e4d0-97d0-5cafb5d47757",
     "name": "EX.O",
-    "image": "https://media.valorant-api.com/bundles/648f655e-4df1-e4d0-97d0-5cafb5d47757/displayicon.png"
+    "image": "bundles/images/EX.O.png"
   },
   {
     "id": "2116a38e-4b71-f169-0d16-ce9289af4bfa",
     "name": "Prime",
-    "image": "https://media.valorant-api.com/bundles/2116a38e-4b71-f169-0d16-ce9289af4bfa/displayicon.png"
+    "image": "bundles/images/Prime.png"
   },
   {
     "id": "8b97b3f5-4555-6818-5ed0-18b1fb4e1336",
     "name": "XERØFANG",
-    "image": "https://media.valorant-api.com/bundles/8b97b3f5-4555-6818-5ed0-18b1fb4e1336/displayicon.png"
+    "image": "bundles/images/XERØFANG.png"
   },
   {
     "id": "3a824027-4414-5a08-64f0-c8905a2aaa66",
     "name": "Radiant Crisis 001",
-    "image": "https://media.valorant-api.com/bundles/3a824027-4414-5a08-64f0-c8905a2aaa66/displayicon.png"
+    "image": "bundles/images/Radiant Crisis 001.png"
   },
   {
     "id": "ae0c9cc4-4c03-f8d6-745c-84953db684fc",
     "name": "Ruination",
-    "image": "https://media.valorant-api.com/bundles/ae0c9cc4-4c03-f8d6-745c-84953db684fc/displayicon.png"
+    "image": "bundles/images/Ruination.png"
   },
   {
     "id": "00f15574-4c2e-992c-1664-0c8969f2d7a3",
     "name": "Aemondir",
-    "image": "https://media.valorant-api.com/bundles/00f15574-4c2e-992c-1664-0c8969f2d7a3/displayicon.png"
+    "image": "bundles/images/Aemondir.png"
   },
   {
     "id": "f3e3a4e2-4c50-7168-74f8-b3a0a8dc917f",
     "name": "Arcane",
-    "image": "https://media.valorant-api.com/bundles/f3e3a4e2-4c50-7168-74f8-b3a0a8dc917f/displayicon.png"
+    "image": "bundles/images/Arcane.png"
   },
   {
     "id": "338cabdb-473f-1f37-fa35-47a3d994517f",
     "name": "Magepunk",
-    "image": "https://media.valorant-api.com/bundles/338cabdb-473f-1f37-fa35-47a3d994517f/displayicon.png"
+    "image": "bundles/images/Magepunk.png"
   },
   {
     "id": "f79f85ec-48f8-6573-873a-75b4627b615e",
     "name": "Valiant Hero",
-    "image": "https://media.valorant-api.com/bundles/f79f85ec-48f8-6573-873a-75b4627b615e/displayicon.png"
+    "image": "bundles/images/Valiant Hero.png"
   },
   {
     "id": "3ad3de55-422b-4076-a89f-81a38ce24973",
     "name": "Overdrive",
-    "image": "https://media.valorant-api.com/bundles/3ad3de55-422b-4076-a89f-81a38ce24973/displayicon.png"
+    "image": "bundles/images/Overdrive.png"
   },
   {
     "id": "a012ba57-4a6a-db6b-fad2-bebb84a9a588",
     "name": "Kuronami",
-    "image": "https://media.valorant-api.com/bundles/a012ba57-4a6a-db6b-fad2-bebb84a9a588/displayicon.png"
+    "image": "bundles/images/Kuronami.png"
   },
   {
     "id": "693d675e-4ed2-c00a-5e38-6b859b275565",
     "name": "Ion",
-    "image": "https://media.valorant-api.com/bundles/693d675e-4ed2-c00a-5e38-6b859b275565/displayicon.png"
+    "image": "bundles/images/Ion.png"
   },
   {
     "id": "b7d754d4-44aa-4663-afc3-84a5cccc3c9d",
     "name": "Oni",
-    "image": "https://media.valorant-api.com/bundles/b7d754d4-44aa-4663-afc3-84a5cccc3c9d/displayicon.png"
+    "image": "bundles/images/Oni.png"
   },
   {
     "id": "3ae56d5e-423d-97c5-1aa2-4faccccec1a2",
     "name": "Cryostasis",
-    "image": "https://media.valorant-api.com/bundles/3ae56d5e-423d-97c5-1aa2-4faccccec1a2/displayicon.png"
+    "image": "bundles/images/Cryostasis.png"
   },
   {
     "id": "0b77a2a9-458c-6772-0f76-339b278f744c",
     "name": "Helix",
-    "image": "https://media.valorant-api.com/bundles/0b77a2a9-458c-6772-0f76-339b278f744c/displayicon.png"
+    "image": "bundles/images/Helix.png"
   },
   {
     "id": "13d427c1-49d7-44f9-6576-27a9c83d787f",
     "name": "Sentinels of Light",
-    "image": "https://media.valorant-api.com/bundles/13d427c1-49d7-44f9-6576-27a9c83d787f/displayicon.png"
+    "image": "bundles/images/Sentinels of Light.png"
   },
   {
     "id": "81d85522-4651-4f66-72de-5fa057b3514c",
     "name": "Reaver",
-    "image": "https://media.valorant-api.com/bundles/81d85522-4651-4f66-72de-5fa057b3514c/displayicon.png"
+    "image": "bundles/images/Reaver.png"
   },
   {
     "id": "fd9fd08f-446f-018f-c632-0e96428f2978",
     "name": "Sovereign",
-    "image": "https://media.valorant-api.com/bundles/fd9fd08f-446f-018f-c632-0e96428f2978/displayicon.png"
+    "image": "bundles/images/Sovereign.png"
   },
   {
     "id": "b6b1b7ea-4a10-f810-a416-03adbb69d379",
     "name": "Recon",
-    "image": "https://media.valorant-api.com/bundles/b6b1b7ea-4a10-f810-a416-03adbb69d379/displayicon.png"
+    "image": "bundles/images/Recon.png"
   },
   {
     "id": "dec7c18d-469b-c1d1-ada5-2ebf1eaf2a5c",
     "name": "Mystbloom",
-    "image": "https://media.valorant-api.com/bundles/dec7c18d-469b-c1d1-ada5-2ebf1eaf2a5c/displayicon.png"
+    "image": "bundles/images/Mystbloom.png"
   },
   {
     "id": "f94649de-4723-b138-8293-45ab433c9da4",
     "name": "Evori Dreamwings",
-    "image": "https://media.valorant-api.com/bundles/f94649de-4723-b138-8293-45ab433c9da4/displayicon.png"
+    "image": "bundles/images/Evori Dreamwings.png"
   },
   {
     "id": "a4ab0768-48b6-8459-31eb-04bf23d20100",
     "name": "CYRAX",
-    "image": "https://media.valorant-api.com/bundles/a4ab0768-48b6-8459-31eb-04bf23d20100/displayicon.png"
+    "image": "bundles/images/CYRAX.png"
   },
   {
     "id": "a31f7d1f-89d8-47ae-875b-1ae2117655c2",
     "name": "BlastX",
-    "image": "https://media.valorant-api.com/bundles/a31f7d1f-89d8-47ae-875b-1ae2117655c2/displayicon.png"
+    "image": "bundles/images/BlastX.png"
   },
   {
     "id": "26333e26-4688-3e1e-3c7c-1ab6bf16ceec",
     "name": "VCT Team Capsules",
-    "nameSubText": "NOW AVAILABLE",
-    "image": "https://media.valorant-api.com/bundles/26333e26-4688-3e1e-3c7c-1ab6bf16ceec/displayicon.png"
+    "image": "bundles/images/VCT Team Capsules.png"
   },
   {
     "id": "ab83f73d-485f-e010-8ea0-24b538468a1a",
     "name": "Protocol 781-A",
-    "image": "https://media.valorant-api.com/bundles/ab83f73d-485f-e010-8ea0-24b538468a1a/displayicon.png"
+    "image": "bundles/images/Protocol 781-A.png"
   },
   {
     "id": "4d9966e8-4dc9-cd1f-9e57-f6844f4b5da1",
     "name": "Divergence",
-    "image": "https://media.valorant-api.com/bundles/4d9966e8-4dc9-cd1f-9e57-f6844f4b5da1/displayicon.png"
+    "image": "bundles/images/Divergence.png"
   },
   {
     "id": "4339220e-4dd2-14e8-f20b-299c90620741",
     "name": "Phaseguard",
-    "image": "https://media.valorant-api.com/bundles/4339220e-4dd2-14e8-f20b-299c90620741/displayicon.png"
+    "image": "bundles/images/Phaseguard.png"
   },
   {
     "id": "00b9a5cd-49fa-0619-2657-c0bc7f35778a",
     "name": "SplashX",
-    "image": "https://media.valorant-api.com/bundles/00b9a5cd-49fa-0619-2657-c0bc7f35778a/displayicon.png"
+    "image": "bundles/images/SplashX.png"
   },
   {
     "id": "f0eb5967-446e-cac1-cb69-008cf2538c84",
     "name": "Bubblegum Deathwish",
-    "image": "https://media.valorant-api.com/bundles/f0eb5967-446e-cac1-cb69-008cf2538c84/displayicon.png"
+    "image": "bundles/images/Bubblegum Deathwish.png"
   },
   {
     "id": "c18084b7-46ea-8231-28dd-808d9f4b4e66",
     "name": "Champions 2025",
-    "image": "https://media.valorant-api.com/bundles/c18084b7-46ea-8231-28dd-808d9f4b4e66/displayicon.png"
+    "image": "bundles/images/Champions 2025.png"
   },
   {
     "id": "f4015c5e-4c32-20ad-11bc-7ebc39293bc1",
     "name": "Dolmir's Revenge",
-    "image": "https://media.valorant-api.com/bundles/f4015c5e-4c32-20ad-11bc-7ebc39293bc1/displayicon.png"
+    "image": "bundles/images/Dolmir's Revenge.png"
   }
 ]
