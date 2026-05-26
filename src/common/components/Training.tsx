@@ -76,10 +76,10 @@ const AbilitiesTraining = () => {
   }
 
   return (
-    <div>
+    <>
       <Browser data={agents} onResponse={handleSelect} attemps={[]} />
       <Modal {...modalState} onClose={closeModal} trainingMode={true}></Modal>
-    </div>
+    </>
   )
 }
 
@@ -107,10 +107,10 @@ const MapsTraining = () => {
   }
 
   return (
-    <div>
+    <>
       <Browser data={maps} onResponse={handleSelect} attemps={[]} />
       <Modal {...modalState} onClose={closeModal} trainingMode></Modal>
-    </div>
+    </>
   )
 }
 
@@ -133,10 +133,10 @@ const FootstepsTraining = () => {
   }
 
   return (
-    <div>
+    <>
       <Browser data={footsteps} onResponse={handleSelect} attemps={[]} />
       <Modal {...modalState} onClose={closeModal} trainingMode></Modal>
-    </div>
+    </>
   )
 }
 
@@ -164,10 +164,10 @@ const AcesTraining = () => {
   }
 
   return (
-    <div>
+    <>
       <Browser data={bundles} onResponse={handleSelect} attemps={[]} />
       <Modal {...modalState} onClose={closeModal} trainingMode></Modal>
-    </div>
+    </>
   )
 }
 
