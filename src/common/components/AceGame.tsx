@@ -77,8 +77,7 @@ function AceGame() {
         <h1 className="mb-2">What's The Skin Bundle?</h1>
         <p className="mb-4">
           After your 5th kill in a round, an ace sound is played that is unique to each premium skin bundle. You have{' '}
-          {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to try to find the correct skin bundle, but you can only
-          hear the ace sound.
+          {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to find the skin bundle that matches the sound.
         </p>
       </div>
 

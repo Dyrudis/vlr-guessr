@@ -75,8 +75,7 @@ function MapGame() {
         <h1 className="mb-2">What's The Map?</h1>
         <p className="mb-4">
           Every map in the game has its own unique theme that is played during the buy phase of the first round of every
-          game. You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to find the correct map, but you can only
-          hear its theme.
+          game. You have {numberOfAttemps} attempt{numberOfAttemps > 1 && 's'} to find the map that matches the music.
         </p>
       </div>
       {answer?.name && (

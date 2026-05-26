@@ -86,7 +86,7 @@ function AbilityGame() {
         <h1 className="mb-2">What's The Ability?</h1>
         <p className="mb-4">
           Each agent in the game has 4 unique abilities that produce distinct sounds. You have {numberOfAttemps} attempt
-          {numberOfAttemps > 1 && 's'} to try to find the correct ability, but you can only hear it.
+          {numberOfAttemps > 1 && 's'} to find the ability that matches the sound.
         </p>
         <DifficultySelect setDifficulty={setDifficulty} difficulties={['normal', 'hard']} />
       </div>

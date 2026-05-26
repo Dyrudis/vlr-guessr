@@ -268,5 +268,30 @@
     "id": "f4015c5e-4c32-20ad-11bc-7ebc39293bc1",
     "name": "Dolmir's Revenge",
     "image": "bundles/images/Dolmir's Revenge.png"
+  },
+  {
+    "id": "cf677a46-4d18-b8fa-7977-1cbf635a4cc0",
+    "name": "Ora by OneTap",
+    "image": "bundles/images/Ora by OneTap.png"
+  },
+  {
+    "id": "35e69ee1-4900-7daa-72fe-a8a3e8b25c42",
+    "name": "Ayakashi",
+    "image": "bundles/images/Ayakashi.png"
+  },
+  {
+    "id": "ba8f7c3b-45f3-dff2-0649-edac63883aff",
+    "name": "Solarstride",
+    "image": "bundles/images/Solarstride.png"
+  },
+  {
+    "id": "1d0f4bbc-4237-1338-5712-1081e21295a1",
+    "name": "Blackthorn",
+    "image": "bundles/images/Blackthorn.png"
+  },
+  {
+    "id": "e34e36b2-4822-e27c-3f9d-c088f4ba465c",
+    "name": "Holo Meridian",
+    "image": "bundles/images/Holo Meridian.png"
   }
 ]

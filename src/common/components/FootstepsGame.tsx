@@ -7,7 +7,7 @@ import Browser from '@components/Browser'
 import Modal, { ModalState } from '@components/Modal'
 import footsteps from '@data/footsteps.json'
 
-const numberOfAttemps = 3
+const numberOfAttemps = 2
 
 function FootstepsGame() {
   const [media, setMedia] = useState<HTMLMediaElement | undefined>()

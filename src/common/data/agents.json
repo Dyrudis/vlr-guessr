@@ -561,6 +561,58 @@
     ]
   },
   {
+    "id": "7c8a4701-4de6-9355-b254-e09bc2a34b72",
+    "name": "Miks",
+    "description": "Straight from Croatia, Miks takes the stage channeling pure sound energy. With his infectious passion and sonic powers, he rallies his squad to move as one as they set the tempo on the battlefield together.",
+    "developerName": "Iris",
+    "icon": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/displayicon.png",
+    "portrait": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/fullportrait.png",
+    "killfeedPortrait": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/killfeedportrait.png",
+    "background": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/background.png",
+    "backgroundGradientColors": ["462b75ff", "0f1923ff", "344673ff", "0f192300"],
+    "role": {
+      "id": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
+      "name": "Controller",
+      "description": "Controllers are experts in slicing up dangerous territory to set their team up for success.",
+      "icon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png"
+    },
+    "abilities": [
+      {
+        "id": "99590a9a-8766-4a5b-9c56-ca710c05d8b7",
+        "agentId": "7c8a4701-4de6-9355-b254-e09bc2a34b72",
+        "slot": "Grenade",
+        "name": "M-pulse",
+        "description": "EQUIP M-pulse. ALT-FIRE to toggle between Concuss and Healing outputs. FIRE to throw the device. Upon landing, M-pulse sends out sound waves, either Concussing or Healing players.",
+        "icon": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/grenade/displayicon.png"
+      },
+      {
+        "id": "b867db94-3fb8-467b-a717-03268ecc8ca0",
+        "agentId": "7c8a4701-4de6-9355-b254-e09bc2a34b72",
+        "slot": "Ability1",
+        "name": "Harmonize",
+        "description": "EQUIP Harmonize. Target an ally and FIRE to activate a Combat Stim and a speed boost on yourself and the ally that refreshes with each kill. ALT-FIRE to grant Combat Stim and speed boost to yourself.",
+        "icon": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/ability1/displayicon.png"
+      },
+      {
+        "id": "69af9b48-3578-41a5-a69a-7c71c4a0e415",
+        "agentId": "7c8a4701-4de6-9355-b254-e09bc2a34b72",
+        "slot": "Ability2",
+        "name": "Waveform",
+        "description": "EQUIP a Map Targeter. FIRE to set locations. ALT-FIRE to spawn Smokes at selected locations.",
+        "icon": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/ability2/displayicon.png"
+      },
+      {
+        "id": "a80d04cf-a309-4644-952e-2702deb7618b",
+        "agentId": "7c8a4701-4de6-9355-b254-e09bc2a34b72",
+        "slot": "Ultimate",
+        "name": "Bassquake",
+        "description": "EQUIP Bassquake. FIRE to build up and unleash Sonic Radiance forward, knocking back, Deafening, and Slowing players.",
+        "icon": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/abilities/ultimate/displayicon.png"
+      }
+    ],
+    "voiceLine": null
+  },
+  {
     "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
     "name": "Killjoy",
     "description": "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't take her enemies out, the debuff her robots provide will make short work of them.",
@@ -620,7 +672,7 @@
     "portrait": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/fullportrait.png",
     "killfeedPortrait": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/killfeedportrait.png",
     "background": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/background.png",
-    "backgroundGradientColors": ["f2d6a3ff", "136c6bff", "11434eff", "0c262cff"],
+    "backgroundGradientColors": ["275146ff", "0f1923ff", "11434eff", "0f192300"],
     "role": {
       "id": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
       "name": "Controller",
@@ -632,24 +684,24 @@
         "id": "07c94f27-597d-41eb-93eb-f546c82d9812",
         "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "slot": "Grenade",
-        "name": "Cascade",
-        "description": "EQUIP a wave of water. FIRE to send the wave rolling forward and through walls. RE-USE to stop the wave. Players hit are Slowed.",
+        "name": "Storm Surge",
+        "description": "EQUIP Storm Surge. FIRE to throw, creating an explosive whirlpool that Slows and Nearsights players within it after a short duration.",
         "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/grenade/displayicon.png"
       },
       {
         "id": "82ba5cae-51a0-4d6b-9fc4-2d2e45bfef8a",
         "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "slot": "Ability1",
-        "name": "Cove",
-        "description": "EQUIP a sphere of shielding water. FIRE to throw. ALT FIRE to lob. Upon impacting the ground, spawn a destructible water shield that blocks bullets.",
+        "name": "High Tide",
+        "description": "EQUIP High Tide. FIRE to send water forward along the ground. HOLD FIRE to guide the water towards your crosshair spawning a vision blocking Screen along the path. ALT FIRE to stop the water early. All players crossing High Tide are Slowed.",
         "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png"
       },
       {
         "id": "081b9111-8e1b-47e6-b608-8f267c004a5b",
         "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "slot": "Ability2",
-        "name": "High Tide",
-        "description": "EQUIP a wall of water. FIRE to send the water forward along the ground. HOLD FIRE to guide the water in the direction of your crosshair, passing through the world, spawning a wall along the water's path. ALT FIRE while bending to stop the water early. Players hit are Slowed.",
+        "name": "Cove",
+        "description": "EQUIP Cove. ACTIVATE to form a water Smoke in the select location. HOLD FIRE while targeting to move the marker further away and HOLD ALT FIRE to move it closer. RELOAD to toggle targeting view. REACTIVATE to Shield the water Smoke, blocking any bullets that hit it. The Shielded water Smoke can be destroyed.",
         "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability2/displayicon.png"
       },
       {
@@ -657,7 +709,7 @@
         "agentId": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "slot": "Ultimate",
         "name": "Reckoning",
-        "description": "EQUIP the full power of your Artifact. FIRE to summon a geyser pool on the ground. Enemy players in the area are targeted by successive geyser strikes. Players caught within a strike are Concussed.",
+        "description": "EQUIP Reckoning. FIRE to unleash the full power of your artifact, releasing a surge of water that barrels forward to Nearsight and Slow enemies that are hit.",
         "icon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ultimate/displayicon.png"
       }
     ]
