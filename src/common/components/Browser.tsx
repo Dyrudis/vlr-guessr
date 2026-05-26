@@ -12,27 +12,36 @@ type BrowserProps = {
   onResponse: (response: bundle | map | ability | footsteps) => void
 }
 
+const sortData = (
+  data: (bundle | map | agent | footsteps)[],
+  difficulty: string
+): (bundle | map | agent | ability | footsteps)[] => {
+  if (isFootsteps(data[0])) {
+    return data.sort((a, b) => (b as footsteps).agentsIds.length - (a as footsteps).agentsIds.length)
+  }
+  if (difficulty === 'normal') {
+    return data.sort((a, b) => a.name.localeCompare(b.name))
+  }
+  if (difficulty === 'hard' && isAgent(data[0])) {
+    console.log('Sorting abilities')
+    return data
+      .map((agent) => (agent as agent).abilities)
+      .flat()
+      .sort((a, b) => a.name.localeCompare(b.name))
+  }
+  if (difficulty === 'hard') {
+    return data.sort(() => Math.random() - 0.5)
+  }
+  return data
+}
+
 function Browser({ data, attempsRemaining, difficulty = 'normal', attemps, onResponse }: BrowserProps) {
-  const [sortedDatas, setSortedDatas] = useState<(bundle | map | agent | ability | footsteps)[]>(data)
+  const [sortedDatas, setSortedDatas] = useState<(bundle | map | agent | ability | footsteps)[]>(
+    sortData(data, difficulty)
+  )
 
   useEffect(() => {
-    if (difficulty === 'normal') {
-      setSortedDatas(data.sort((a, b) => a.name.localeCompare(b.name)))
-    }
-    if (difficulty === 'hard') {
-      setSortedDatas(data.sort(() => Math.random() - 0.5))
-    }
-    if (difficulty === 'hard' && isAgent(data[0])) {
-      setSortedDatas(
-        data
-          .map((agent) => (agent as agent).abilities)
-          .flat()
-          .sort((a, b) => a.name.localeCompare(b.name))
-      )
-    }
-    if (isFootsteps(data[0])) {
-      setSortedDatas(data.sort((a, b) => (b as footsteps).agentsIds.length - (a as footsteps).agentsIds.length))
-    }
+    setSortedDatas(sortData(data, difficulty))
   }, [data, difficulty])
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -65,12 +74,7 @@ function Browser({ data, attempsRemaining, difficulty = 'normal', attemps, onRes
         }}
       >
         {sortedDatas?.map((data) => (
-          <Card
-            data={data}
-            onClick={(response) => onResponse(response)}
-            key={data.id}
-            attemps={attemps}
-          />
+          <Card data={data} onClick={(response) => onResponse(response)} key={data.id} attemps={attemps} />
         ))}
       </div>
     </div>

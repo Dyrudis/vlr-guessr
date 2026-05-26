@@ -9,9 +9,10 @@ type AudioPlayerProps = HTMLAttributes<HTMLDivElement> & {
   url?: string
   media?: HTMLMediaElement
   onReady?: (media: HTMLMediaElement) => void
+  autoPlay?: boolean
 }
 
-function AudioPlayer({ url, media, onReady }: AudioPlayerProps) {
+function AudioPlayer({ url, media, onReady, autoPlay }: AudioPlayerProps) {
   const containerRef = useRef(null)
   const [volume, setVolume] = useState(0.375)
   const [isMuted, setIsMuted] = useState(false)
@@ -71,6 +72,9 @@ function AudioPlayer({ url, media, onReady }: AudioPlayerProps) {
       if (savedMuted) {
         setIsMuted(savedMuted === 'true')
         wavesurfer.setMuted(savedMuted === 'true')
+      }
+      if (autoPlay) {
+        wavesurfer.play()
       }
     })
     return () => {

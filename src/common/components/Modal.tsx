@@ -11,12 +11,13 @@ export type ModalState = {
 
 type ModalProps = {
   isOpen: boolean
-  onClose: () => void
+  onClose?: () => void
   title: string
   children: React.ReactNode
+  trainingMode?: boolean
 }
 
-function Modal({ isOpen, onClose, title, children }: ModalProps) {
+function Modal({ isOpen, onClose, title, children, trainingMode: trainingMode = false }: ModalProps) {
   const navigate = useNavigate()
 
   if (!isOpen) return null
@@ -24,21 +25,29 @@ function Modal({ isOpen, onClose, title, children }: ModalProps) {
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center z-50 bg-[#000000a0]">
       <div className="bg-background rounded-lg shadow-lg p-6 w-full max-w-md  mx-2">
-        <div className='flex items-center mb-4 justify-between'>
+        <div className="flex items-center mb-4 justify-between">
           <h2 className="text-xl font-semibold">{title}</h2>
           <X size={32} className="rounded-md hover:bg-background-alt cursor-pointer" onClick={onClose} />
         </div>
         {children}
-        <div className="flex justify-center gap-4">
-          <Button className="w-full flex items-center justify-center gap-2" onClick={() => navigate('/')}>
-            <House />
-            Change mode
-          </Button>
-          <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
-            <ArrowsClockwise />
-            Play again
-          </Button>
-        </div>
+        {trainingMode ? (
+          <div className="flex justify-center gap-4">
+            <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
+              Close
+            </Button>
+          </div>
+        ) : (
+          <div className="flex justify-center gap-4">
+            <Button className="w-full flex items-center justify-center gap-2" onClick={() => navigate('/')}>
+              <House />
+              Change mode
+            </Button>
+            <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
+              <ArrowsClockwise />
+              Play again
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   )

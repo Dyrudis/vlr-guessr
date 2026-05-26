@@ -144,7 +144,7 @@ const WinModal = ({ answer, attemps, media }: { answer: ability; attemps: abilit
       <div className="flex flex-col items-center relative">
         <p className="text-center mb-2">Congratulations! You found the correct ability!</p>
         <Attemps attemps={attemps} answer={answer} />
-        <img src={answer.icon} alt={answer.name} className="px-4 w-1/2 mb-4" />
+        <img src={answer.icon} alt={answer.name} className="px-4 w-32 mb-4" />
         <AudioPlayer media={media} />
       </div>
     </>
@@ -152,14 +152,18 @@ const WinModal = ({ answer, attemps, media }: { answer: ability; attemps: abilit
 }
 
 const LoseModal = ({ answer, attemps, media }: { answer: ability; attemps: ability[]; media?: HTMLMediaElement }) => {
+  const allAbilities = agents.flatMap((agent) =>
+    agent.abilities.map((ability) => ({ ...ability, agentName: agent.name }))
+  )
+  const ability = allAbilities.find((a) => a.id === answer.id)
   return (
     <div className="flex flex-col items-center relative">
       <p className="text-center mb-2">You have used all your attempts!</p>
       <Attemps attemps={attemps} answer={answer} />
       <p className="text-center mb-2">
-        The correct answer was: <span className="font-extrabold">{answer.name}</span>
+        The correct answer was: {ability?.agentName}'s <span className="font-extrabold">{ability?.name}</span>
       </p>
-      <img src={answer.icon} alt={answer.name} className="px-4 w-1/2 mb-4" />
+      <img src={answer.icon} alt={answer.name} className="px-4 w-32 mb-4" />
       <AudioPlayer media={media} />
     </div>
   )

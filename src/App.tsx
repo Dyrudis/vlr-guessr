@@ -8,6 +8,7 @@ import FootstepsGame from '@components/FootstepsGame'
 import Header from '@components/Header'
 import MapGame from '@components/MapGame'
 import Menu from '@components/Menu'
+import Training from '@components/Training'
 
 function App() {
   const queryClient = new QueryClient()
@@ -17,13 +18,14 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Header />
-          <div className="flex-grow flex flex-col items-center justify-center">
+          <div className="flex-grow flex flex-col items-center">
             <Routes>
               <Route path="/" element={<Menu />} />
               <Route path="/map" element={<MapGame />} />
               <Route path="/ability" element={<AbilityGame />} />
               <Route path="/ace" element={<AceGame />} />
               <Route path="/footsteps" element={<FootstepsGame />} />
+              <Route path="/training" element={<Training />} />
               <Route
                 path="*"
                 element={
