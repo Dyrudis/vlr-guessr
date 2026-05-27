@@ -8,8 +8,8 @@ import { getAgentsImages } from './FootstepsGame'
 
 type CardProps = {
   data: bundle | map | agent | ability | footsteps
-  attemps: (bundle | map | ability | footsteps)[]
-  onClick: (data: bundle | map | ability | footsteps) => void
+  attemps?: (bundle | map | ability | footsteps)[]
+  onClick?: (data: bundle | map | ability | footsteps) => void
 }
 
 function Card({ data, attemps, onClick }: CardProps) {
@@ -44,7 +44,7 @@ function Card({ data, attemps, onClick }: CardProps) {
           <p className="text-center">{agent.name}</p>
           <div className="flex items-center justify-center mt-2 mb-1 mx-3">
             {agent.abilities.map((ability) => {
-              const hasBeenTried = attemps.some((attempt) => attempt.id === ability.id)
+              const hasBeenTried = attemps?.some((attempt) => attempt.id === ability.id)
               return (
                 <TooltipProvider delayDuration={0} key={ability.id}>
                   <Tooltip>
@@ -56,7 +56,7 @@ function Card({ data, attemps, onClick }: CardProps) {
                             ? 'opacity-20'
                             : 'opacity-65 hover:opacity-100 cursor-pointer hover:bg-background-alt '
                         }`}
-                        onClick={() => (hasBeenTried ? undefined : onClick(ability))}
+                        onClick={() => (hasBeenTried ? undefined : onClick?.(ability))}
                       >
                         <img src={ability.icon} alt={ability.name} />
                       </div>
@@ -78,7 +78,7 @@ function Card({ data, attemps, onClick }: CardProps) {
     )
   } else if (isAbility(data)) {
     const ability = data as ability
-    const hasBeenTried = attemps.some((attempt) => attempt.id === ability.id)
+    const hasBeenTried = attemps?.some((attempt) => attempt.id === ability.id)
 
     return (
       <div
@@ -86,7 +86,7 @@ function Card({ data, attemps, onClick }: CardProps) {
         className={`mx-auto w-[8rem] aspect-square p-4 flex flex-col items-center justify-center rounded-xl transition ${
           hasBeenTried ? 'opacity-20' : 'opacity-65 hover:opacity-100 cursor-pointer hover:bg-background-alt '
         }`}
-        onClick={() => (hasBeenTried ? undefined : onClick(ability))}
+        onClick={() => (hasBeenTried ? undefined : onClick?.(ability))}
       >
         {isLoading && <SkeletonAbility />}
         <div className={isLoading ? 'hidden' : ''}>
@@ -97,14 +97,14 @@ function Card({ data, attemps, onClick }: CardProps) {
     )
   } else if (isFootsteps(data)) {
     const footsteps = data as footsteps
-    const hasBeenTried = attemps.some((attempt) => attempt.id === footsteps.id)
+    const hasBeenTried = attemps?.some((attempt) => attempt.id === footsteps.id)
 
     return (
       <div
         className={`mx-auto bg-background rounded-lg p-1 max-w-3xs w-full transition flex flex-col items-center justify-center ${
           hasBeenTried ? 'opacity-20 grayscale' : 'cursor-pointer hover:bg-background-alt '
         }`}
-        onClick={() => (hasBeenTried ? undefined : onClick(footsteps))}
+        onClick={() => (hasBeenTried ? undefined : onClick?.(footsteps))}
       >
         {getAgentsImages(footsteps)}
         <p className="text-center">{footsteps.name}</p>
@@ -112,13 +112,13 @@ function Card({ data, attemps, onClick }: CardProps) {
     )
   } else {
     const bundleOrMap = data as bundle | map
-    const hasBeenTried = attemps.some((attempt) => attempt.id === bundleOrMap.id)
+    const hasBeenTried = attemps?.some((attempt) => attempt.id === bundleOrMap.id)
 
     return (
       <div
         className={`mx-auto bg-background rounded-lg p-1 max-w-3xs w-full transition
         ${hasBeenTried ? 'opacity-20 grayscale' : 'cursor-pointer hover:bg-background-alt '}`}
-        onClick={() => (hasBeenTried ? undefined : onClick(bundleOrMap))}
+        onClick={() => (hasBeenTried ? undefined : onClick?.(bundleOrMap))}
       >
         {isLoading && <SkeletonBundleOrMap />}
         <div className={isLoading ? 'hidden' : ''}>

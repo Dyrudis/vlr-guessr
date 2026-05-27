@@ -93,6 +93,7 @@ function AbilityGame() {
       {answer?.name && (
         <>
           <AudioPlayer url={`abilities/${answer.agentId}/${answer.id}.wav`} onReady={(media) => setMedia(media)} />
+          <br className="my-8" />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
@@ -142,7 +143,7 @@ const WinModal = ({ answer, attemps, media }: { answer: ability; attemps: abilit
         colors={['#FF7777', '#77FF77', '#7777FF', '#FFFF77', '#FF77FF', '#77FFFF']}
       />
       <div className="flex flex-col items-center relative">
-        <p className="text-center mb-2">Congratulations! You found the correct ability!</p>
+        <p className="text-center mb-2">You found the correct ability!</p>
         <Attemps attemps={attemps} answer={answer} />
         <img src={answer.icon} alt={answer.name} className="px-4 w-32 mb-4" />
         <AudioPlayer media={media} />

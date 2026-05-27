@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 
 import AbilityGame from '@components/AbilityGame'
 import AceGame from '@components/AceGame'
+import DailyGame from '@components/DailyGame'
 import Footer from '@components/Footer'
 import FootstepsGame from '@components/FootstepsGame'
 import Header from '@components/Header'
@@ -23,6 +24,7 @@ function App() {
               <Route path="/" element={<Menu />} />
               <Route path="/map" element={<MapGame />} />
               <Route path="/ability" element={<AbilityGame />} />
+              <Route path="/daily" element={<DailyGame />} />
               <Route path="/ace" element={<AceGame />} />
               <Route path="/footsteps" element={<FootstepsGame />} />
               <Route path="/training" element={<Training />} />

@@ -84,6 +84,7 @@ function AceGame() {
       {answer?.name && (
         <>
           <AudioPlayer url={`bundles/sounds/${answer.id}.mp3`} onReady={(media) => setMedia(media)} />
+          <br className="my-8" />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
@@ -130,7 +131,7 @@ const WinModal = ({ answer, attemps, media }: { answer: bundle; attemps: bundle[
         colors={['#FF7777', '#77FF77', '#7777FF', '#FFFF77', '#FF77FF', '#77FFFF']}
       />
       <div className="flex flex-col items-center relative">
-        <p className="text-center mb-2">Congratulations! You found the correct bundle!</p>
+        <p className="text-center mb-2">You found the correct bundle!</p>
         <Attemps attemps={attemps} answer={answer} />
         <img src={answer.image} alt={answer.name} className="px-4 h-auto mb-4" />
         <AudioPlayer media={media} />

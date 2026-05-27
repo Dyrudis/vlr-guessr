@@ -12,7 +12,7 @@ import mapImageMobile from '@assets/map mobile.webp'
 import voicelineImage from '@assets/wip.webp'
 import voicelineImageMobile from '@assets/wip mobile.webp'
 import Button from './Button'
-import { Crosshair } from '@phosphor-icons/react'
+import { Calendar, Crosshair } from '@phosphor-icons/react'
 
 function Menu() {
   const navigate = useNavigate()
@@ -26,7 +26,23 @@ function Menu() {
   }
 
   return (
-    <div className="flex flex-col-reverse lg:flex-col items-center">
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col md:flex-row items-center gap-8 text-center mb-8 w-full max-w-240 px-8">
+        <Button variant="primary" onClick={() => goto('/daily')} className="md:w-2/3 w-full py-4">
+          <div className="flex items-center justify-center gap-2">
+            <Calendar size={32} />
+            <h3>Daily Mode</h3>
+          </div>
+          <p>5 sounds, and a new challenge every day!</p>
+        </Button>
+        <Button variant="secondary" onClick={() => goto('/training')} className="md:w-1/3 w-full py-4">
+          <div className="flex items-center justify-center gap-2">
+            <Crosshair size={32} />
+            <h3>Training Mode</h3>
+          </div>
+          <p>Browse all the sounds.</p>
+        </Button>
+      </div>
       <div className="flex items-center justify-center gap-6 flex-wrap px-8">
         <MenuItem
           imageUrl={abilityImage}
@@ -64,13 +80,6 @@ function Menu() {
           onClick={() => goto('/voiceline')}
         />
       </div>
-      <Button variant="primary" onClick={() => goto('/training')} className="w-120 max-w-2/3 h-24 lg:mt-8 mb-8">
-        <div className="flex items-center justify-center gap-2">
-          <Crosshair size={32} />
-          <h3>Training Mode</h3>
-        </div>
-        <p>Browse all the sounds from the game to sharpen your skills.</p>
-      </Button>
     </div>
   )
 }

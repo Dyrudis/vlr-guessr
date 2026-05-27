@@ -14,7 +14,7 @@ function Button({ children, variant = 'primary', ...props }: ButtonProps) {
         'rounded-lg p-2 text-background cursor-pointer transition-colors duration-200',
         variant === 'primary'
           ? 'bg-primary text-background hover:bg-primary-alt'
-          : 'bg-background-alt text-primary hover:bg-primary-alt hover:text-background',
+          : 'bg-background-alt text-primary hover:bg-primary hover:text-background',
         props.className
       )}
     >

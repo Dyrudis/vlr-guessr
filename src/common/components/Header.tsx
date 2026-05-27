@@ -12,6 +12,7 @@ function Header() {
       <div className="flex items-center gap-4 mb-4 sm:mb-0">
         <img src={icon} alt="Icon" className="w-16 h-16" />
         <h1>vlr-guessr</h1>
+        <h1 className="hidden">valorant guessr</h1>
       </div>
 
       {window.location.pathname !== '/' && (

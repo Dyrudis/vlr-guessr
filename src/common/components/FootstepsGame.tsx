@@ -85,6 +85,7 @@ function FootstepsGame() {
       {answer?.name && (
         <>
           <AudioPlayer url={`footsteps/sounds/${answer.id}.wav`} onReady={(media) => setMedia(media)} />
+          <br className="my-8" />
           <Attemps attemps={attemps} answer={answer} />
         </>
       )}
@@ -139,7 +140,7 @@ const WinModal = ({
         colors={['#FF7777', '#77FF77', '#7777FF', '#FFFF77', '#FF77FF', '#77FFFF']}
       />
       <div className="flex flex-col items-center relative">
-        <p className="text-center mb-2">Congratulations! You found the correct footsteps!</p>
+        <p className="text-center mb-2">You found the correct footsteps!</p>
         <Attemps attemps={attemps} answer={answer} />
         {getAgentsImages(answer)}
         <AudioPlayer media={media} />

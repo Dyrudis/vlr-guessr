@@ -15,9 +15,10 @@ type ModalProps = {
   title: string
   children: React.ReactNode
   trainingMode?: boolean
+  dailyMode?: boolean
 }
 
-function Modal({ isOpen, onClose, title, children, trainingMode: trainingMode = false }: ModalProps) {
+function Modal({ isOpen, onClose, title, children, trainingMode = false, dailyMode = false }: ModalProps) {
   const navigate = useNavigate()
 
   if (!isOpen) return null
@@ -30,24 +31,24 @@ function Modal({ isOpen, onClose, title, children, trainingMode: trainingMode = 
           <X size={32} className="rounded-md hover:bg-background-alt cursor-pointer" onClick={onClose} />
         </div>
         {children}
-        {trainingMode ? (
-          <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 mt-8">
+          {trainingMode || dailyMode ? (
             <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
-              Close
+              Continue
             </Button>
-          </div>
-        ) : (
-          <div className="flex justify-center gap-4">
-            <Button className="w-full flex items-center justify-center gap-2" onClick={() => navigate('/')}>
-              <House />
-              Change mode
-            </Button>
-            <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
-              <ArrowsClockwise />
-              Play again
-            </Button>
-          </div>
-        )}
+          ) : (
+            <>
+              <Button className="w-full flex items-center justify-center gap-2" onClick={() => navigate('/')}>
+                <House />
+                Change mode
+              </Button>
+              <Button className="w-full flex items-center justify-center gap-2" onClick={onClose}>
+                <ArrowsClockwise />
+                Play again
+              </Button>
+            </>
+          )}
+        </div>
       </div>
     </div>
   )
