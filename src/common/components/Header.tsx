@@ -9,10 +9,12 @@ function Header() {
 
   return (
     <header className="mb-8 p-12 rounded-lg flex flex-col sm:flex-row items-center sm:items-start">
-      <div className="flex items-center gap-4 mb-4 sm:mb-0">
-        <img src={icon} alt="Icon" className="w-16 h-16" />
-        <h1>vlr-guessr</h1>
-        <h1 className="hidden">valorant guessr</h1>
+      <div className="flex flex-col items-center sm:items-start mb-4 sm:mb-0">
+        <div className="flex items-center gap-4">
+          <img src={icon} alt="Icon" className="w-16 h-16" />
+          <h1>vlr-guessr</h1>
+        </div>
+        <h1 className="text-sm! font-normal m-0">VALORANT Blind Test Game</h1>
       </div>
 
       {window.location.pathname !== '/' && (
