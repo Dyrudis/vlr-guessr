@@ -16,7 +16,7 @@ function Footer() {
           className="flex items-center hover:bg-primary hover:text-background px-2 py-1 rounded-md cursor-pointer lg:hidden"
         >
           <GitBranch size={24} />
-          <span className="ml-2">v1.7.1</span>
+          <span className="ml-2">v1.7.2</span>
         </a>
       </div>
       <span className="text-xs text-center max-w-lg">
@@ -32,7 +32,7 @@ function Footer() {
         className="hidden lg:flex items-center hover:bg-primary hover:text-background px-2 py-1 rounded-md cursor-pointer"
       >
         <GitBranch size={24} />
-        <span className="ml-2">v1.7.1</span>
+        <span className="ml-2">v1.7.2</span>
       </a>
     </footer>
   )
