@@ -8,11 +8,12 @@ import { getAgentsImages } from './FootstepsGame'
 
 type CardProps = {
   data: bundle | map | agent | ability | footsteps
-  attemps?: (bundle | map | ability | footsteps)[]
-  onClick?: (data: bundle | map | ability | footsteps) => void
+  attemps?: (bundle | map | ability | footsteps | agent)[]
+  onClick?: (data: bundle | map | ability | footsteps | agent) => void
+  cardMode?: 'default' | 'agent'
 }
 
-function Card({ data, attemps, onClick }: CardProps) {
+function Card({ data, attemps, onClick, cardMode = 'default' }: CardProps) {
   const [isLoading, setIsLoading] = useState<Boolean>(true)
 
   if (isAgent(data)) {
@@ -20,6 +21,39 @@ function Card({ data, attemps, onClick }: CardProps) {
 
     const gradientColors = agent.backgroundGradientColors.map((color) => `#${color}`)
     const gradient = `linear-gradient(165deg, ${gradientColors.join(', ')})`
+
+    if (cardMode === 'agent') {
+      const hasBeenTried = attemps?.some((attempt) => attempt.id === agent.id)
+      return (
+        <div
+          className={`bg-background rounded-lg p-1 w-3xs group mx-auto transition ${
+            hasBeenTried ? 'opacity-20 grayscale' : 'cursor-pointer hover:bg-background-alt '
+          }`}
+          onClick={() => (hasBeenTried ? undefined : onClick?.(agent))}
+        >
+          {isLoading && <SkeletonAgent />}
+          <div className={isLoading ? 'hidden' : ''}>
+            <div className="relative">
+              <div
+                className="absolute h-full w-full mask-cover mask-center opacity-30 group-hover:opacity-100 transition"
+                style={{
+                  background: gradient,
+                  maskImage: `url(${agent.background})`,
+                  WebkitMaskImage: `url(${agent.background})`,
+                }}
+              />
+              <img
+                src={agent.icon}
+                alt={agent.name}
+                className="relative m-1 mx-auto w-1/3"
+                onLoad={() => setIsLoading(false)}
+              />
+            </div>
+            <p className="text-center">{agent.name}</p>
+          </div>
+        </div>
+      )
+    }
 
     return (
       <div className="bg-background rounded-lg p-1 w-3xs group mx-auto">

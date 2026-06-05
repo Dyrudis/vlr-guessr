@@ -8,8 +8,9 @@ type BrowserProps = {
   data: (bundle | map | agent | footsteps)[]
   attempsRemaining?: number
   difficulty?: string
-  attemps: (bundle | map | ability | footsteps)[]
-  onResponse: (response: bundle | map | ability | footsteps) => void
+  attemps: (bundle | map | ability | footsteps | agent)[]
+  onResponse: (response: bundle | map | ability | footsteps | agent) => void
+  cardMode?: 'default' | 'agent'
 }
 
 const sortData = (
@@ -35,7 +36,7 @@ const sortData = (
   return data
 }
 
-function Browser({ data, attempsRemaining, difficulty = 'normal', attemps, onResponse }: BrowserProps) {
+function Browser({ data, attempsRemaining, difficulty = 'normal', attemps, onResponse, cardMode = 'default' }: BrowserProps) {
   const [sortedDatas, setSortedDatas] = useState<(bundle | map | agent | ability | footsteps)[]>(
     sortData(data, difficulty)
   )
@@ -74,7 +75,7 @@ function Browser({ data, attempsRemaining, difficulty = 'normal', attemps, onRes
         }}
       >
         {sortedDatas?.map((data) => (
-          <Card data={data} onClick={(response) => onResponse(response)} key={data.id} attemps={attemps} />
+          <Card data={data} onClick={(response) => onResponse(response)} key={data.id} attemps={attemps} cardMode={cardMode} />
         ))}
       </div>
     </div>

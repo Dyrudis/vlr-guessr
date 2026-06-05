@@ -26,7 +26,7 @@ function AceGame() {
     setAnswer(bundles[Math.floor(Math.random() * bundles.length)])
   }, [])
 
-  const handleResponse = (response: bundle | map | ability | footsteps) => {
+  const handleResponse = (response: bundle | map | ability | footsteps | agent) => {
     if (hasWon !== undefined) return
 
     response = response as bundle

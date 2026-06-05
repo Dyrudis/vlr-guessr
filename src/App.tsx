@@ -10,6 +10,7 @@ import Header from '@components/Header'
 import MapGame from '@components/MapGame'
 import Menu from '@components/Menu'
 import Training from '@components/Training'
+import VoicelineGame from '@components/VoicelineGame'
 
 function App() {
   const queryClient = new QueryClient()
@@ -27,6 +28,7 @@ function App() {
               <Route path="/daily" element={<DailyGame />} />
               <Route path="/ace" element={<AceGame />} />
               <Route path="/footsteps" element={<FootstepsGame />} />
+              <Route path="/voiceline" element={<VoicelineGame />} />
               <Route path="/training" element={<Training />} />
               <Route
                 path="*"

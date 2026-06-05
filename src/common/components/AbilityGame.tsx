@@ -32,7 +32,7 @@ function AbilityGame() {
     setAnswer(agents[Math.floor(Math.random() * agents.length)].abilities[Math.floor(Math.random() * 4)])
   }, [])
 
-  const handleResponse = (response: bundle | map | ability | footsteps) => {
+  const handleResponse = (response: bundle | map | ability | footsteps | agent) => {
     if (hasWon !== undefined) return
 
     response = response as ability

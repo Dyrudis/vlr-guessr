@@ -42,7 +42,7 @@ function DailyGame() {
     }
   }, [guesses, dailyAbilities, getTimeUntilNextDailyString])
 
-  const handleResponse = (response: bundle | map | ability | footsteps) => {
+  const handleResponse = (response: bundle | map | ability | footsteps | agent) => {
     const isCorrectAgent = (response as ability).agentId === currentAbility.agentId
 
     const guess: guess = {

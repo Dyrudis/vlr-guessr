@@ -55,7 +55,7 @@ const AbilitiesTraining = () => {
     agent.abilities.map((ability) => ({ ...ability, agentName: agent.name }))
   )
 
-  const handleSelect = (item: bundle | map | ability | footsteps) => {
+  const handleSelect = (item: bundle | map | ability | footsteps | agent) => {
     const ability = allAbilities.find((a) => a.id === item.id)
     if (ability) {
       setModalState({
@@ -86,7 +86,7 @@ const AbilitiesTraining = () => {
 const MapsTraining = () => {
   const [modalState, setModalState] = useState<ModalState>({ isOpen: false, title: '', children: null })
 
-  const handleSelect = (item: bundle | map | ability | footsteps) => {
+  const handleSelect = (item: bundle | map | ability | footsteps | agent) => {
     const map = maps.find((m) => m.id === item.id)
     if (map) {
       setModalState({
@@ -117,7 +117,7 @@ const MapsTraining = () => {
 const FootstepsTraining = () => {
   const [modalState, setModalState] = useState<ModalState>({ isOpen: false, title: '', children: null })
 
-  const handleSelect = (item: bundle | map | ability | footsteps) => {
+  const handleSelect = (item: bundle | map | ability | footsteps | agent) => {
     const footstep = footsteps.find((f) => f.id === item.id)
     if (footstep) {
       setModalState({
@@ -143,7 +143,7 @@ const FootstepsTraining = () => {
 const AcesTraining = () => {
   const [modalState, setModalState] = useState<ModalState>({ isOpen: false, title: '', children: null })
 
-  const handleSelect = (item: bundle | map | ability | footsteps) => {
+  const handleSelect = (item: bundle | map | ability | footsteps | agent) => {
     const ace = bundles.find((b) => b.id === item.id)
     if (ace) {
       setModalState({

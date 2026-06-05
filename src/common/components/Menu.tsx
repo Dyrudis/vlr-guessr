@@ -9,8 +9,8 @@ import footstepsImage from '@assets/footsteps.webp'
 import footstepsImageMobile from '@assets/footsteps mobile.webp'
 import mapImage from '@assets/map.webp'
 import mapImageMobile from '@assets/map mobile.webp'
-import voicelineImage from '@assets/wip.webp'
-import voicelineImageMobile from '@assets/wip mobile.webp'
+import voicelineImage from '@assets/voiceline.webp'
+import voicelineImageMobile from '@assets/voiceline mobile.webp'
 import Button from './Button'
 import { Calendar, Crosshair } from '@phosphor-icons/react'
 
@@ -52,6 +52,14 @@ function Menu() {
           onClick={() => goto('/ability')}
         />
         <MenuItem
+          imageUrl={voicelineImage}
+          imageMobileUrl={voicelineImageMobile}
+          title="Voiceline"
+          description="Guess the agent based on their voiceline."
+          onClick={() => goto('/voiceline')}
+          isNew
+        />
+        <MenuItem
           imageUrl={mapImage}
           imageMobileUrl={mapImageMobile}
           title="Map Theme"
@@ -71,13 +79,6 @@ function Menu() {
           title="Ace"
           description="Identify the skin bundle from the ace sound."
           onClick={() => goto('/ace')}
-        />
-        <MenuItem
-          imageUrl={voicelineImage}
-          imageMobileUrl={voicelineImageMobile}
-          title="Voiceline"
-          description="Coming soon... Work in Progress!"
-          onClick={() => goto('/voiceline')}
         />
       </div>
     </div>

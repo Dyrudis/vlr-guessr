@@ -26,7 +26,7 @@ function FootstepsGame() {
     setAnswer(footsteps[Math.floor(Math.random() * footsteps.length)])
   }, [])
 
-  const handleResponse = (response: bundle | map | ability | footsteps) => {
+  const handleResponse = (response: bundle | map | ability | footsteps | agent) => {
     if (hasWon !== undefined) return
 
     response = response as footsteps

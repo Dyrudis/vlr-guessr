@@ -26,7 +26,7 @@ function MapGame() {
     setAnswer(maps[Math.floor(Math.random() * maps.length)])
   }, [])
 
-  const handleResponse = (response: bundle | map | ability | footsteps) => {
+  const handleResponse = (response: bundle | map | ability | footsteps | agent) => {
     if (hasWon !== undefined) return
 
     response = response as map

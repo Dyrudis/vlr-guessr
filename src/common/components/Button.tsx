@@ -4,9 +4,14 @@ import classNames from 'classnames'
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode
   variant?: 'primary' | 'secondary'
+  disabled?: boolean
 }
 
-function Button({ children, variant = 'primary', ...props }: ButtonProps) {
+function Button({ children, variant = 'primary', disabled, ...props }: ButtonProps) {
+  if (disabled) {
+    return <div className="m-4"></div>
+  }
+
   return (
     <button
       {...props}
